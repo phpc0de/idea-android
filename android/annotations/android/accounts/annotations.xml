@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="android.accounts.AccountManager">
+    <annotation name="android.support.annotation.SystemService">
+      <val name="value" val="android.content.Context.ACCOUNT_SERVICE" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager ACTION_ACCOUNT_REMOVED">
+    <annotation name="android.support.annotation.BroadcastBehavior">
+      <val name="includeBackground" val="true" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager LOGIN_ACCOUNTS_CHANGED_ACTION">
+    <annotation name="android.support.annotation.BroadcastBehavior">
+      <val name="includeBackground" val="true" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;android.accounts.Account&gt; renameAccount(android.accounts.Account, java.lang.String, android.accounts.AccountManagerCallback&lt;android.accounts.Account&gt;, android.os.Handler)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.AUTHENTICATE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;android.accounts.Account&gt; renameAccount(android.accounts.Account, java.lang.String, android.accounts.AccountManagerCallback&lt;android.accounts.Account&gt;, android.os.Handler) 1">
+    <annotation name="android.support.annotation.Size">
+      <val name="min" val="1" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;android.os.Bundle&gt; addAccount(java.lang.String, java.lang.String, java.lang.String[], android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback&lt;android.os.Bundle&gt;, android.os.Handler)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MANAGE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;android.os.Bundle&gt; confirmCredentials(android.accounts.Account, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback&lt;android.os.Bundle&gt;, android.os.Handler)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MANAGE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;android.os.Bundle&gt; editProperties(java.lang.String, android.app.Activity, android.accounts.AccountManagerCallback&lt;android.os.Bundle&gt;, android.os.Handler)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MANAGE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;android.os.Bundle&gt; getAuthToken(android.accounts.Account, java.lang.String, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback&lt;android.os.Bundle&gt;, android.os.Handler)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.USE_CREDENTIALS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;android.os.Bundle&gt; getAuthToken(android.accounts.Account, java.lang.String, android.os.Bundle, boolean, android.accounts.AccountManagerCallback&lt;android.os.Bundle&gt;, android.os.Handler)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.USE_CREDENTIALS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;android.os.Bundle&gt; getAuthToken(android.accounts.Account, java.lang.String, boolean, android.accounts.AccountManagerCallback&lt;android.os.Bundle&gt;, android.os.Handler)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.USE_CREDENTIALS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;android.os.Bundle&gt; getAuthTokenByFeatures(java.lang.String, java.lang.String, java.lang.String[], android.app.Activity, android.os.Bundle, android.os.Bundle, android.accounts.AccountManagerCallback&lt;android.os.Bundle&gt;, android.os.Handler)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MANAGE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;android.os.Bundle&gt; removeAccount(android.accounts.Account, android.app.Activity, android.accounts.AccountManagerCallback&lt;android.os.Bundle&gt;, android.os.Handler)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MANAGE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;android.os.Bundle&gt; updateCredentials(android.accounts.Account, java.lang.String, android.os.Bundle, android.app.Activity, android.accounts.AccountManagerCallback&lt;android.os.Bundle&gt;, android.os.Handler)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MANAGE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.AccountManagerFuture&lt;java.lang.Boolean&gt; removeAccount(android.accounts.Account, android.accounts.AccountManagerCallback&lt;java.lang.Boolean&gt;, android.os.Handler)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MANAGE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.Account[] getAccounts()">
+    <annotation name="android.support.annotation.NonNull" />
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.GET_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.Account[] getAccountsByType(java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.GET_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager android.accounts.Account[] getAccountsByTypeForPackage(java.lang.String, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.accounts.AccountManager boolean addAccountExplicitly(android.accounts.Account, java.lang.String, android.os.Bundle)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.AUTHENTICATE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager boolean notifyAccountAuthenticated(android.accounts.Account)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.AUTHENTICATE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager boolean removeAccountExplicitly(android.accounts.Account)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.AUTHENTICATE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager boolean setAccountVisibility(android.accounts.Account, java.lang.String, int) 2">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.accounts.AccountManager.VISIBILITY_UNDEFINED, android.accounts.AccountManager.VISIBILITY_VISIBLE, android.accounts.AccountManager.VISIBILITY_USER_MANAGED_VISIBLE, android.accounts.AccountManager.VISIBILITY_NOT_VISIBLE, android.accounts.AccountManager.VISIBILITY_USER_MANAGED_NOT_VISIBLE}" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager int getAccountVisibility(android.accounts.Account, java.lang.String)">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.accounts.AccountManager.VISIBILITY_UNDEFINED, android.accounts.AccountManager.VISIBILITY_VISIBLE, android.accounts.AccountManager.VISIBILITY_USER_MANAGED_VISIBLE, android.accounts.AccountManager.VISIBILITY_NOT_VISIBLE, android.accounts.AccountManager.VISIBILITY_USER_MANAGED_NOT_VISIBLE}" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager java.lang.String blockingGetAuthToken(android.accounts.Account, java.lang.String, boolean)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.USE_CREDENTIALS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager java.lang.String getPassword(android.accounts.Account)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.AUTHENTICATE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager java.lang.String getUserData(android.accounts.Account, java.lang.String)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.AUTHENTICATE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager java.lang.String peekAuthToken(android.accounts.Account, java.lang.String)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.AUTHENTICATE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager void addOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener, android.os.Handler, boolean)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.GET_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager void clearPassword(android.accounts.Account)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.MANAGE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager void invalidateAuthToken(java.lang.String, java.lang.String)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="anyOf" val="{&quot;android.permission.MANAGE_ACCOUNTS&quot;, &quot;android.permission.USE_CREDENTIALS&quot;}" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager void setAuthToken(android.accounts.Account, java.lang.String, java.lang.String)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.AUTHENTICATE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager void setPassword(android.accounts.Account, java.lang.String)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.AUTHENTICATE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+  <item name="android.accounts.AccountManager void setUserData(android.accounts.Account, java.lang.String, java.lang.String)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.AUTHENTICATE_ACCOUNTS&quot;" />
+      <val name="apis" val="&quot;..22&quot;" />
+    </annotation>
+  </item>
+</root>
+

@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="android.os.AsyncTask Result doInBackground(Params...)">
+    <annotation name="android.support.annotation.WorkerThread" />
+  </item>
+  <item name="android.os.AsyncTask android.os.AsyncTask&lt;Params,Progress,Result&gt; execute(Params...)">
+    <annotation name="android.support.annotation.MainThread" />
+  </item>
+  <item name="android.os.AsyncTask android.os.AsyncTask&lt;Params,Progress,Result&gt; executeOnExecutor(java.util.concurrent.Executor, Params...)">
+    <annotation name="android.support.annotation.MainThread" />
+  </item>
+  <item name="android.os.AsyncTask void execute(java.lang.Runnable)">
+    <annotation name="android.support.annotation.MainThread" />
+  </item>
+  <item name="android.os.AsyncTask void onCancelled()">
+    <annotation name="android.support.annotation.MainThread" />
+  </item>
+  <item name="android.os.AsyncTask void onCancelled(Result)">
+    <annotation name="android.support.annotation.MainThread" />
+  </item>
+  <item name="android.os.AsyncTask void onPostExecute(Result)">
+    <annotation name="android.support.annotation.MainThread" />
+  </item>
+  <item name="android.os.AsyncTask void onPreExecute()">
+    <annotation name="android.support.annotation.MainThread" />
+  </item>
+  <item name="android.os.AsyncTask void onProgressUpdate(Progress...)">
+    <annotation name="android.support.annotation.MainThread" />
+  </item>
+  <item name="android.os.AsyncTask void publishProgress(Progress...)">
+    <annotation name="android.support.annotation.WorkerThread" />
+  </item>
+  <item name="android.os.BaseBundle boolean[] getBooleanArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle boolean[] getBooleanArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle double[] getDoubleArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle double[] getDoubleArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle int[] getIntArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle int[] getIntArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle java.lang.Object get(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle java.lang.String getString(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle java.lang.String getString(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle java.lang.String getString(java.lang.String, java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle java.lang.String[] getStringArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle java.lang.String[] getStringArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle long[] getLongArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle long[] getLongArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putBoolean(java.lang.String, boolean) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putBooleanArray(java.lang.String, boolean[]) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putBooleanArray(java.lang.String, boolean[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putDouble(java.lang.String, double) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putDoubleArray(java.lang.String, double[]) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putDoubleArray(java.lang.String, double[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putInt(java.lang.String, int) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putIntArray(java.lang.String, int[]) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putIntArray(java.lang.String, int[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putLong(java.lang.String, long) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putLongArray(java.lang.String, long[]) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putLongArray(java.lang.String, long[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putString(java.lang.String, java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putString(java.lang.String, java.lang.String) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putStringArray(java.lang.String, java.lang.String[]) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BaseBundle void putStringArray(java.lang.String, java.lang.String[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.BatteryManager">
+    <annotation name="android.support.annotation.SystemService">
+      <val name="value" val="android.content.Context.BATTERY_SERVICE" />
+    </annotation>
+  </item>
+  <item name="android.os.Binder android.os.IInterface queryLocalInterface(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Binder android.os.IInterface queryLocalInterface(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Binder android.os.UserHandle getCallingUserHandle()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Binder boolean onTransact(int, android.os.Parcel, android.os.Parcel, int) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Binder boolean onTransact(int, android.os.Parcel, android.os.Parcel, int) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Binder boolean transact(int, android.os.Parcel, android.os.Parcel, int) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Binder boolean transact(int, android.os.Parcel, android.os.Parcel, int) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Binder boolean unlinkToDeath(android.os.IBinder.DeathRecipient, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Binder java.lang.String getInterfaceDescriptor()">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Binder void attachInterface(android.os.IInterface, java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Binder void attachInterface(android.os.IInterface, java.lang.String) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Binder void dump(java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Binder void dump(java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Binder void dump(java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Binder void dump(java.io.FileDescriptor, java.lang.String[]) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Binder void dump(java.io.FileDescriptor, java.lang.String[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Binder void dumpAsync(java.io.FileDescriptor, java.lang.String[]) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Binder void dumpAsync(java.io.FileDescriptor, java.lang.String[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Binder void linkToDeath(android.os.IBinder.DeathRecipient, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Build java.lang.String getSerial()">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.READ_PHONE_STATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.os.Bundle T getParcelable(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle T getParcelable(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.os.Bundle getBundle(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.os.Bundle getBundle(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.os.IBinder getBinder(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.os.IBinder getBinder(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.os.Parcelable[] getParcelableArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.os.Parcelable[] getParcelableArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.util.Size getSize(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.util.Size getSize(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.util.SizeF getSizeF(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.util.SizeF getSizeF(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.util.SparseArray&lt;T&gt; getSparseParcelableArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle android.util.SparseArray&lt;T&gt; getSparseParcelableArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle byte[] getByteArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle byte[] getByteArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle char[] getCharArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle char[] getCharArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle float[] getFloatArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle float[] getFloatArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.io.Serializable getSerializable(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.io.Serializable getSerializable(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.lang.CharSequence getCharSequence(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.lang.CharSequence getCharSequence(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.lang.CharSequence getCharSequence(java.lang.String, java.lang.CharSequence) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.lang.CharSequence[] getCharSequenceArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.lang.CharSequence[] getCharSequenceArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.util.ArrayList&lt;T&gt; getParcelableArrayList(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.util.ArrayList&lt;T&gt; getParcelableArrayList(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.util.ArrayList&lt;java.lang.CharSequence&gt; getCharSequenceArrayList(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.util.ArrayList&lt;java.lang.CharSequence&gt; getCharSequenceArrayList(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.util.ArrayList&lt;java.lang.Integer&gt; getIntegerArrayList(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.util.ArrayList&lt;java.lang.Integer&gt; getIntegerArrayList(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.util.ArrayList&lt;java.lang.String&gt; getStringArrayList(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle java.util.ArrayList&lt;java.lang.String&gt; getStringArrayList(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle short[] getShortArray(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle short[] getShortArray(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putBinder(java.lang.String, android.os.IBinder) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putBinder(java.lang.String, android.os.IBinder) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putBundle(java.lang.String, android.os.Bundle) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putBundle(java.lang.String, android.os.Bundle) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putByte(java.lang.String, byte) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putByteArray(java.lang.String, byte[]) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putByteArray(java.lang.String, byte[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putChar(java.lang.String, char) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putCharArray(java.lang.String, char[]) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putCharArray(java.lang.String, char[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putCharSequence(java.lang.String, java.lang.CharSequence) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putCharSequence(java.lang.String, java.lang.CharSequence) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putCharSequenceArray(java.lang.String, java.lang.CharSequence[]) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putCharSequenceArray(java.lang.String, java.lang.CharSequence[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putCharSequenceArrayList(java.lang.String, java.util.ArrayList&lt;java.lang.CharSequence&gt;) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putCharSequenceArrayList(java.lang.String, java.util.ArrayList&lt;java.lang.CharSequence&gt;) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putFloat(java.lang.String, float) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putFloatArray(java.lang.String, float[]) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putFloatArray(java.lang.String, float[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putIntegerArrayList(java.lang.String, java.util.ArrayList&lt;java.lang.Integer&gt;) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putIntegerArrayList(java.lang.String, java.util.ArrayList&lt;java.lang.Integer&gt;) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putParcelable(java.lang.String, android.os.Parcelable) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putParcelable(java.lang.String, android.os.Parcelable) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putParcelableArray(java.lang.String, android.os.Parcelable[]) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putParcelableArray(java.lang.String, android.os.Parcelable[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putParcelableArrayList(java.lang.String, java.util.ArrayList&lt;? extends android.os.Parcelable&gt;) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putParcelableArrayList(java.lang.String, java.util.ArrayList&lt;? extends android.os.Parcelable&gt;) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putSerializable(java.lang.String, java.io.Serializable) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putSerializable(java.lang.String, java.io.Serializable) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putShort(java.lang.String, short) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putShortArray(java.lang.String, short[]) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putShortArray(java.lang.String, short[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putSize(java.lang.String, android.util.Size) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putSize(java.lang.String, android.util.Size) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putSizeF(java.lang.String, android.util.SizeF) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putSizeF(java.lang.String, android.util.SizeF) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putSparseParcelableArray(java.lang.String, android.util.SparseArray&lt;? extends android.os.Parcelable&gt;) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putSparseParcelableArray(java.lang.String, android.util.SparseArray&lt;? extends android.os.Parcelable&gt;) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putStringArrayList(java.lang.String, java.util.ArrayList&lt;java.lang.String&gt;) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Bundle void putStringArrayList(java.lang.String, java.util.ArrayList&lt;java.lang.String&gt;) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Debug void attachJvmtiAgent(java.lang.String, java.lang.String, java.lang.ClassLoader) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Debug void attachJvmtiAgent(java.lang.String, java.lang.String, java.lang.ClassLoader) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Debug void attachJvmtiAgent(java.lang.String, java.lang.String, java.lang.ClassLoader) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.DropBoxManager">
+    <annotation name="android.support.annotation.SystemService">
+      <val name="value" val="android.content.Context.DROPBOX_SERVICE" />
+    </annotation>
+  </item>
+  <item name="android.os.FileObserver void onEvent(int, java.lang.String) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Handler android.os.Handler createAsync(android.os.Looper)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Handler android.os.Handler createAsync(android.os.Looper) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Handler android.os.Handler createAsync(android.os.Looper, android.os.Handler.Callback)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Handler android.os.Handler createAsync(android.os.Looper, android.os.Handler.Callback) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Handler android.os.Handler createAsync(android.os.Looper, android.os.Handler.Callback) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.HardwarePropertiesManager">
+    <annotation name="android.support.annotation.SystemService">
+      <val name="value" val="android.content.Context.HARDWARE_PROPERTIES_SERVICE" />
+    </annotation>
+  </item>
+  <item name="android.os.HardwarePropertiesManager android.os.CpuUsageInfo[] getCpuUsages()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.HardwarePropertiesManager float[] getDeviceTemperatures(int, int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.HardwarePropertiesManager float[] getDeviceTemperatures(int, int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.os.HardwarePropertiesManager.DEVICE_TEMPERATURE_CPU, android.os.HardwarePropertiesManager.DEVICE_TEMPERATURE_GPU, android.os.HardwarePropertiesManager.DEVICE_TEMPERATURE_BATTERY, android.os.HardwarePropertiesManager.DEVICE_TEMPERATURE_SKIN}" />
+    </annotation>
+  </item>
+  <item name="android.os.HardwarePropertiesManager float[] getDeviceTemperatures(int, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.os.HardwarePropertiesManager.TEMPERATURE_CURRENT, android.os.HardwarePropertiesManager.TEMPERATURE_THROTTLING, android.os.HardwarePropertiesManager.TEMPERATURE_SHUTDOWN, android.os.HardwarePropertiesManager.TEMPERATURE_THROTTLING_BELOW_VR_MIN}" />
+    </annotation>
+  </item>
+  <item name="android.os.HardwarePropertiesManager float[] getFanSpeeds()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.IBinder android.os.IInterface queryLocalInterface(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.IBinder android.os.IInterface queryLocalInterface(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.IBinder boolean transact(int, android.os.Parcel, android.os.Parcel, int) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.IBinder boolean transact(int, android.os.Parcel, android.os.Parcel, int) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.IBinder boolean unlinkToDeath(android.os.IBinder.DeathRecipient, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.IBinder java.lang.String getInterfaceDescriptor()">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.IBinder void dump(java.io.FileDescriptor, java.lang.String[]) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.IBinder void dump(java.io.FileDescriptor, java.lang.String[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.IBinder void dumpAsync(java.io.FileDescriptor, java.lang.String[]) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.IBinder void dumpAsync(java.io.FileDescriptor, java.lang.String[]) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.IBinder void linkToDeath(android.os.IBinder.DeathRecipient, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.LocaleList LocaleList(java.util.Locale...) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.LocaleList android.os.LocaleList forLanguageTags(java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.LocaleList android.os.LocaleList forLanguageTags(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.LocaleList android.os.LocaleList getAdjustedDefault()">
+    <annotation name="android.support.annotation.NonNull" />
+    <annotation name="android.support.annotation.Size">
+      <val name="min" val="1" />
+    </annotation>
+  </item>
+  <item name="android.os.LocaleList android.os.LocaleList getDefault()">
+    <annotation name="android.support.annotation.NonNull" />
+    <annotation name="android.support.annotation.Size">
+      <val name="min" val="1" />
+    </annotation>
+  </item>
+  <item name="android.os.LocaleList android.os.LocaleList getEmptyLocaleList()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.LocaleList int indexOf(java.util.Locale)">
+    <annotation name="android.support.annotation.IntRange">
+      <val name="from" val="-1" />
+    </annotation>
+  </item>
+  <item name="android.os.LocaleList int size()">
+    <annotation name="android.support.annotation.IntRange">
+      <val name="from" val="0" />
+    </annotation>
+  </item>
+  <item name="android.os.LocaleList java.lang.String toLanguageTags()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.LocaleList java.util.Locale getFirstMatch(java.lang.String[])">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.LocaleList void setDefault(android.os.LocaleList) 0">
+    <annotation name="android.support.annotation.NonNull" />
+    <annotation name="android.support.annotation.Size">
+      <val name="min" val="1" />
+    </annotation>
+  </item>
+  <item name="android.os.Looper android.os.Looper myLooper()">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.Looper android.os.MessageQueue getQueue()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Looper android.os.MessageQueue myQueue()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Looper java.lang.Thread getThread()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Looper void dump(android.util.Printer, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Looper void dump(android.util.Printer, java.lang.String) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.Looper void setMessageLogging(android.util.Printer) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.MessageQueue void addIdleHandler(android.os.MessageQueue.IdleHandler) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.MessageQueue void addOnFileDescriptorEventListener(java.io.FileDescriptor, int, android.os.MessageQueue.OnFileDescriptorEventListener) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.MessageQueue void addOnFileDescriptorEventListener(java.io.FileDescriptor, int, android.os.MessageQueue.OnFileDescriptorEventListener) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.os.MessageQueue.OnFileDescriptorEventListener.EVENT_INPUT, android.os.MessageQueue.OnFileDescriptorEventListener.EVENT_OUTPUT, android.os.MessageQueue.OnFileDescriptorEventListener.EVENT_ERROR}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.os.MessageQueue void addOnFileDescriptorEventListener(java.io.FileDescriptor, int, android.os.MessageQueue.OnFileDescriptorEventListener) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.MessageQueue void removeIdleHandler(android.os.MessageQueue.IdleHandler) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.MessageQueue void removeOnFileDescriptorEventListener(java.io.FileDescriptor) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.MessageQueue.OnFileDescriptorEventListener int onFileDescriptorEvents(java.io.FileDescriptor, int)">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.os.MessageQueue.OnFileDescriptorEventListener.EVENT_INPUT, android.os.MessageQueue.OnFileDescriptorEventListener.EVENT_OUTPUT, android.os.MessageQueue.OnFileDescriptorEventListener.EVENT_ERROR}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.os.MessageQueue.OnFileDescriptorEventListener int onFileDescriptorEvents(java.io.FileDescriptor, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.MessageQueue.OnFileDescriptorEventListener int onFileDescriptorEvents(java.io.FileDescriptor, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.os.MessageQueue.OnFileDescriptorEventListener.EVENT_INPUT, android.os.MessageQueue.OnFileDescriptorEventListener.EVENT_OUTPUT, android.os.MessageQueue.OnFileDescriptorEventListener.EVENT_ERROR}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.os.Parcelable int describeContents()">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.os.Parcelable.CONTENTS_FILE_DESCRIPTOR}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.os.Parcelable void writeToParcel(android.os.Parcel, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.os.Parcelable.PARCELABLE_WRITE_RETURN_VALUE}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.os.PersistableBundle android.os.PersistableBundle getPersistableBundle(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.PersistableBundle android.os.PersistableBundle getPersistableBundle(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.PersistableBundle void putPersistableBundle(java.lang.String, android.os.PersistableBundle) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.PersistableBundle void putPersistableBundle(java.lang.String, android.os.PersistableBundle) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.PowerManager">
+    <annotation name="android.support.annotation.SystemService">
+      <val name="value" val="android.content.Context.POWER_SERVICE" />
+    </annotation>
+  </item>
+  <item name="android.os.PowerManager int getLocationPowerSaveMode()">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.os.PowerManager.LOCATION_MODE_NO_CHANGE, android.os.PowerManager.LOCATION_MODE_GPS_DISABLED_WHEN_SCREEN_OFF, android.os.PowerManager.LOCATION_MODE_ALL_DISABLED_WHEN_SCREEN_OFF, android.os.PowerManager.LOCATION_MODE_FOREGROUND_ONLY}" />
+    </annotation>
+  </item>
+  <item name="android.os.RecoverySystem">
+  </item>
+  <item name="android.os.RecoverySystem void installPackage(android.content.Context, java.io.File)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.RECOVERY&quot;" />
+    </annotation>
+  </item>
+  <item name="android.os.SharedMemory android.os.SharedMemory create(java.lang.String, int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.SharedMemory android.os.SharedMemory create(java.lang.String, int) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.SharedMemory java.nio.ByteBuffer map(int, int, int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.SharedMemory java.nio.ByteBuffer mapReadOnly()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.SharedMemory java.nio.ByteBuffer mapReadWrite()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.SharedMemory void unmap(java.nio.ByteBuffer) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.SharedMemory void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.StrictMode.ThreadPolicy.Builder android.os.StrictMode.ThreadPolicy.Builder penaltyListener(java.util.concurrent.Executor, android.os.StrictMode.OnThreadViolationListener) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.StrictMode.ThreadPolicy.Builder android.os.StrictMode.ThreadPolicy.Builder penaltyListener(java.util.concurrent.Executor, android.os.StrictMode.OnThreadViolationListener) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.StrictMode.VmPolicy.Builder android.os.StrictMode.VmPolicy.Builder penaltyListener(java.util.concurrent.Executor, android.os.StrictMode.OnVmViolationListener) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.StrictMode.VmPolicy.Builder android.os.StrictMode.VmPolicy.Builder penaltyListener(java.util.concurrent.Executor, android.os.StrictMode.OnVmViolationListener) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.UserManager">
+    <annotation name="android.support.annotation.SystemService">
+      <val name="value" val="android.content.Context.USER_SERVICE" />
+    </annotation>
+  </item>
+  <item name="android.os.UserManager android.content.Intent createUserCreationIntent(java.lang.String, java.lang.String, java.lang.String, android.os.PersistableBundle) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.UserManager android.content.Intent createUserCreationIntent(java.lang.String, java.lang.String, java.lang.String, android.os.PersistableBundle) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.UserManager android.content.Intent createUserCreationIntent(java.lang.String, java.lang.String, java.lang.String, android.os.PersistableBundle) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.UserManager android.content.Intent createUserCreationIntent(java.lang.String, java.lang.String, java.lang.String, android.os.PersistableBundle) 3">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.os.UserManager android.os.Bundle getApplicationRestrictions(java.lang.String)">
+    <annotation name="android.support.annotation.WorkerThread" />
+  </item>
+  <item name="android.os.UserManager boolean requestQuietModeEnabled(boolean, android.os.UserHandle) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.os.UserManager.UserOperationException int getUserOperationResult()">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.os.UserManager.USER_OPERATION_SUCCESS, android.os.UserManager.USER_OPERATION_ERROR_UNKNOWN, android.os.UserManager.USER_OPERATION_ERROR_MANAGED_PROFILE, android.os.UserManager.USER_OPERATION_ERROR_MAX_RUNNING_USERS, android.os.UserManager.USER_OPERATION_ERROR_CURRENT_USER, android.os.UserManager.USER_OPERATION_ERROR_LOW_STORAGE, android.os.UserManager.USER_OPERATION_ERROR_MAX_USERS}" />
+    </annotation>
+  </item>
+  <item name="android.os.Vibrator">
+    <annotation name="android.support.annotation.SystemService">
+      <val name="value" val="android.content.Context.VIBRATOR_SERVICE" />
+    </annotation>
+  </item>
+  <item name="android.os.Vibrator void cancel()">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.VIBRATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.os.Vibrator void vibrate(android.os.VibrationEffect)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.VIBRATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.os.Vibrator void vibrate(android.os.VibrationEffect, android.media.AudioAttributes)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.VIBRATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.os.Vibrator void vibrate(long)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.VIBRATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.os.Vibrator void vibrate(long, android.media.AudioAttributes)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.VIBRATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.os.Vibrator void vibrate(long[], int)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.VIBRATE&quot;" />
+    </annotation>
+  </item>
+  <item name="android.os.Vibrator void vibrate(long[], int, android.media.AudioAttributes)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.VIBRATE&quot;" />
+    </annotation>
+  </item>
+</root>
+

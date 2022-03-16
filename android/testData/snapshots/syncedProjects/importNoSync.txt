@@ -1,0 +1,19 @@
+PROJECT                       : testImportNoSync
+    PROJECT_JDK                   : corretto-<JAVA_VERSION>
+        Version                       : Amazon Corretto version <JDK_VERSION>
+    MODULE                        : testImportNoSync
+        LinkedProjectId               : :
+        LinkedProjectPath             : <PROJECT>
+        RootProjectPath               : <PROJECT>
+        COMPILER_MODULE_EXTENSION
+            compilerSourceOutputPath      : file://<PROJECT>/build/classes/production/testImportNoSync [-]
+            compilerTestOutputPath        : file://<PROJECT>/build/classes/test/testImportNoSync [-]
+            isCompilerPathInherited       : true
+            isExcludeOutput               : true
+        ModuleFile                    : <PROJECT>/.idea/modules/testImportNoSync.iml [-]
+        ModuleTypeName                : JAVA_MODULE
+        FACET                         : Android-Gradle
+            TypeId                        : android-gradle
+            GradlePath                    : :
+        CONENT_ENTRY                  : file://<PROJECT>
+        ORDER_ENTRY                   : <Module source>

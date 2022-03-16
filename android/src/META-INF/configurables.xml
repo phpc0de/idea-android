@@ -1,0 +1,22 @@
+<idea-plugin>
+
+  <!-- Common configurables for IJ Idea and AndroidStudio. Please add all the new configurables here if not sure. -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <projectConfigurable groupId="build" id="gradle.compiler"
+                         provider="com.android.tools.idea.gradle.project.build.compiler.GradleCompilerSettingsConfigurableProvider"/>
+
+    <applicationConfigurable groupId="tools" id="device.file.explorer"
+                             provider="com.android.tools.idea.explorer.options.DeviceFileExplorerConfigurableProvider"/>
+
+    <projectConfigurable provider="com.android.tools.idea.flags.StudioExperimentalConfigurableProvider"
+                         id ="experimental"
+                         bundle="messages.AndroidBundle"
+                         key="configurable.ExperimentalSettingsConfigurable.display.name"
+                         groupId="root" groupWeight="-999"/>
+
+    <projectConfigurable provider="com.android.tools.idea.flags.PluginExperimentalConfigurableProvider"
+                         id ="experimentalPlugin" displayName="Android (Experimental)" groupId="language"/>
+
+  </extensions>
+</idea-plugin>

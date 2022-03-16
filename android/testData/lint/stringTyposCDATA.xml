@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_typo_nb"><![CDATA[
+      Mer moro med <warning>An<caret>driod</warning>
+    ]]></string>
+</resources>

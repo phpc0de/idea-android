@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="android.gesture.GestureLibraries android.gesture.GestureLibrary fromRawResource(android.content.Context, int) 1">
+    <annotation name="android.support.annotation.RawRes" />
+  </item>
+  <item name="android.gesture.GestureOverlayView int getGestureColor()">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.gesture.GestureOverlayView int getUncertainGestureColor()">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.gesture.GestureOverlayView void setGestureColor(int) 0">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.gesture.GestureOverlayView void setUncertainGestureColor(int) 0">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+</root>
+

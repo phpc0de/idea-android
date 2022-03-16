@@ -1,0 +1,199 @@
+<!--
+  ~ Copyright (C) 2016 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<idea-plugin>
+  <depends optional="true" config-file="designer-androidstudio.xml">com.intellij.modules.androidstudio</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <fileEditorProvider implementation="com.android.tools.idea.editors.layeredimage.LayeredImageEditorProvider" />
+    <projectService serviceImplementation="com.android.tools.idea.editors.layeredimage.LayersManager" />
+  </extensions>
+
+  <!-- Extension points -->
+  <extensionPoints>
+    <extensionPoint qualifiedName="com.android.tools.idea.uibuilder.handlers.viewHandlerProvider"
+                    area="IDEA_PROJECT"
+                    interface="com.android.tools.idea.uibuilder.handlers.ViewHandlerProvider" />
+  </extensionPoints>
+
+  <!-- New layout editor -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <fileEditorProvider implementation="com.android.tools.idea.uibuilder.editor.multirepresentation.sourcecode.SourceCodeEditorProvider" />
+    <editorNotificationProvider implementation="com.android.tools.idea.uibuilder.editor.multirepresentation.MultiRepresentationPreviewNotificationForwarder" />
+  </extensions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow factoryClass="com.android.tools.idea.uibuilder.visual.VisualizationToolWindowFactory"
+                id="Layout Validation" anchor="right" icon="StudioIcons.Shell.ToolWindows.MULTI_PREVIEW" canCloseContents="false" />
+    <projectService serviceImplementation="com.android.tools.idea.uibuilder.handlers.ViewHandlerManager" headlessImplementation="" />
+    <projectService serviceImplementation="com.android.tools.idea.uibuilder.editor.LayoutNavigationManager" />
+    <applicationService serviceImplementation="com.android.tools.idea.uibuilder.visual.VisualizationToolSettings"/>
+    <projectService serviceImplementation="com.android.tools.idea.uibuilder.visual.VisualizationToolProjectSettings"/>
+  </extensions>
+
+  <!-- Collects all the providers for source code preview representations -->
+  <extensionPoints>
+    <extensionPoint qualifiedName="com.android.tools.idea.uibuilder.editor.multirepresentation.sourcecode.sourceCodePreviewRepresentationProvider"
+                    interface="com.android.tools.idea.uibuilder.editor.multirepresentation.PreviewRepresentationProvider" />
+  </extensionPoints>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <fileEditorProvider implementation="com.android.tools.idea.uibuilder.editor.NlEditorProvider"/>
+    <fileEditorProvider implementation="com.android.tools.idea.uibuilder.editor.DesignFilesPreviewEditorProvider"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <applicationService serviceImplementation="com.android.tools.idea.common.model.NlDependencyManager"/>
+    <projectService serviceImplementation="com.android.tools.idea.common.surface.DesignSurfaceSettings"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <keymapExtension implementation="com.android.tools.idea.DesignerKeymapExtension"/>
+  </extensions>
+
+  <!-- The design tool actions which the shortcuts are configurable. -->
+  <!-- The action ids should be listed in com.android.tools.idea.actions.DesignerActions.kt file  -->
+  <actions>
+    <!-- Shared actions across all design tools-->
+    <group id="Android.Designer.CommonActions"> <!-- Keymap group for Preferences -> Keymap -> Android Design Tools -->
+      <action id="Android.Designer.ForceRefreshPreview"
+              class="com.android.tools.idea.common.actions.RefreshRenderAction"
+              text="Force Refresh Layout"
+              description="Refresh preview(s)">
+        <keyboard-shortcut keymap="$default" first-keystroke="R"/>
+      </action>
+      <action id="Android.Designer.IssueNotificationAction"
+              icon="StudioIcons.Common.ERROR"
+              class="com.android.tools.idea.common.actions.IssueNotificationAction"
+              text="Toggle Issue Panel"
+              description="Toggle the visibility of Issue Panel">
+        <keyboard-shortcut keymap="$default" first-keystroke="E"/>
+      </action>
+
+      <reference ref="Adtui.ZoomInAction"/>
+      <reference ref="Adtui.ZoomOutAction"/>
+      <reference ref="Adtui.ZoomToActualAction"/>
+      <reference ref="Adtui.ZoomToFitAction"/>
+      <reference ref="Adtui.ZoomResetAction"/>
+    </group>
+
+    <group id="Android.Designer.ToolsActions"/> <!-- Keymap group for Preferences -> Keymap -> Android Design Tools -> [Tool_Name] -->
+
+    <!-- Layout Editor specific actions -->
+    <group id="Android.Designer.LayoutEditorActions" text="Layout Editor">
+      <action id="Android.Designer.SwitchDesignMode"
+              icon="StudioIcons.LayoutEditor.Toolbar.VIEW_MODE"
+              class="com.android.tools.idea.uibuilder.actions.SwitchToNextScreenViewProviderAction"
+              text="Switch Design Mode"
+              description="Switch the design mode cycling within Design, Blueprint, and Design + Blueprint">
+        <keyboard-shortcut keymap="$default" first-keystroke="B"/>
+      </action>
+      <action id="Android.Designer.ToggleDeviceOrientation"
+              icon="StudioIcons.LayoutEditor.Toolbar.ROTATE_BUTTON"
+              class="com.android.tools.idea.common.actions.ToggleDeviceOrientationAction"
+              text="Toggle Device Orientation"
+              description="Toggle the preview orientation between portrait and landscape">
+        <keyboard-shortcut keymap="$default" first-keystroke="O"/>
+      </action>
+      <action id="Android.Designer.ToggleDeviceNightMode"
+              icon="StudioIcons.DeviceConfiguration.NIGHT_MODE"
+              class="com.android.tools.idea.common.actions.ToggleDeviceNightModeAction"
+              text="Toggle Device Night Mode"
+              description="Enable or disable the Night mode of preview">
+        <keyboard-shortcut keymap="$default" first-keystroke="N"/>
+      </action>
+      <action id="Android.Designer.NextDevice"
+              class="com.android.tools.idea.common.actions.NextDeviceAction"
+              text="Preview Next Device"
+              description="Change to next device in the device menu">
+        <keyboard-shortcut keymap="$default" first-keystroke="D"/>
+      </action>
+      <action id="Android.Designer.PreviousDevice"
+              class="com.android.tools.idea.common.actions.PreviousDeviceAction"
+              text="Preview Previous Device"
+              description="Change to previous device in the device menu">
+        <keyboard-shortcut keymap="$default" first-keystroke="shift D"/>
+      </action>
+      <!-- TODO (b/149212539): Migrate other shortcuts of Layout Editor -->
+
+      <add-to-group group-id="Android.Designer.ToolsActions"/>
+    </group>
+
+    <!-- TODO: add shortcuts and group for nav editor, multi-preview, custom view, compose, and split editor -->
+    <group id="Android.Designer.NavEditorActions" text="Navigation Editor">
+
+      <action id="Android.Designer.AssignStartDestination"
+              icon="StudioIcons.NavEditor.Toolbar.ASSIGN_START"
+              class="com.android.tools.idea.naveditor.actions.StartDestinationToolbarAction"
+              text="Assign Start Destination"
+              description="Assign the start point of navigation graph">
+        <keyboard-shortcut keymap="$default" first-keystroke="H"/>
+      </action>
+
+      <action id="Android.Designer.AddDeepLink"
+              icon="StudioIcons.NavEditor.Toolbar.DEEPLINK"
+              class="com.android.tools.idea.naveditor.actions.DeepLinkToolbarAction"
+              text="Add Deep Link"
+              description="Add deep link to the selected item">
+        <keyboard-shortcut keymap="$default" first-keystroke="D"/>
+      </action>
+
+      <action id="Android.Designer.AddAction"
+              icon="StudioIcons.NavEditor.Toolbar.ACTION"
+              class="com.android.tools.idea.naveditor.actions.AddActionToolbarAction"
+              text="Add Action"
+              description="Add action to the selected item">
+        <keyboard-shortcut keymap="$default" first-keystroke="A"/>
+      </action>
+
+      <action id="Android.Designer.AutoArrange"
+              icon="StudioIcons.NavEditor.Toolbar.AUTO_ARRANGE"
+              class="com.android.tools.idea.naveditor.actions.AutoArrangeAction"
+              text="Auto Arrange"
+              description="Rearrange the items">
+        <keyboard-shortcut keymap="$default" first-keystroke="ctrl L"/>
+        <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta L" replace-all="true"/>
+      </action>
+
+      <add-to-group group-id="Android.Designer.ToolsActions"/>
+    </group>
+
+    <action id="Android.CreateSampleDataDirectory" class="com.android.tools.idea.actions.CreateSampleDataDirectory">
+      <add-to-group group-id="NewGroup" anchor="after" relative-to-action="Android.CreateResourceDirectory"/>
+    </action>
+
+    <action internal="true" id="Android.GenerateLayoutTestSkeletonAction" class="com.android.tools.idea.uibuilder.actions.GenerateLayoutTestSkeletonAction">
+      <add-to-group group-id="Internal.Android" anchor="after" relative-to-action="Android.TerminateAdbAction"/>
+    </action>
+
+    <action id="StoreDefaultLayout" class="com.android.tools.idea.common.actions.StoreDefaultWindowLayoutAction" overrides="true"/>
+    <action id="RestoreDefaultLayout" class="com.android.tools.idea.common.actions.RestoreDefaultWindowLayoutAction" overrides="true"/>
+  </actions>
+
+  <!--  Configurables-->
+  <extensions defaultExtensionNs="com.intellij">
+    <applicationConfigurable groupId="editor" groupWeight="115" id="nele.options"
+                             provider="com.android.tools.idea.uibuilder.options.NlOptionsConfigurableProvider"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <moduleService serviceImplementation="com.android.tools.idea.uibuilder.palette.NlPaletteModel" />
+  </extensions>
+  <extensions defaultExtensionNs="com.android.tools.idea.assistant">
+    <!-- fixme-ank4: there is no assistant in idea yet -->
+    <navlistener implementation="com.android.tools.idea.uibuilder.actions.analytics.AssistantPanelNavListener" />
+  </extensions>
+</idea-plugin>

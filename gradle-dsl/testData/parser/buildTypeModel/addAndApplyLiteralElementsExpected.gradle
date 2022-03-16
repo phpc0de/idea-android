@@ -1,0 +1,23 @@
+android {
+  buildTypes {
+    xyz {
+      applicationIdSuffix 'mySuffix-1'
+      crunchPngs false
+      debuggable false
+      isDefault false
+      embedMicroApp true
+      jniDebuggable false
+      minifyEnabled true
+      multiDexEnabled false
+      pseudoLocalesEnabled true
+      renderscriptDebuggable false
+      renderscriptOptimLevel 2
+      shrinkResources true
+      testCoverageEnabled false
+      useJack true
+      useProguard false
+      versionNameSuffix 'def'
+      zipAlignEnabled false
+    }
+  }
+}

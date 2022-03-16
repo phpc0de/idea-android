@@ -1,0 +1,8 @@
+buildscript {
+  repositories {
+      maven {url 'prebuilts/tools/common/m2/repository'}
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:0.12.+'
+  }
+}

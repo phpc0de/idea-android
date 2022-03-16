@@ -1,0 +1,7 @@
+<resources>
+  <style name="Theme.Light" parent="@android:style/Theme"></style>
+  <style name="Theme.X.Light.Y" parent="Theme.Light"></style>
+  <style name="Theme.X.Dark.Y" parent="@android:style/Theme"></style>
+  <style name="Theme.Material.Light" parent="Theme.Light"></style>
+
+</resources>

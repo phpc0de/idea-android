@@ -1,0 +1,13 @@
+*~
+*.bak
+*.pyc
+Thumbs.db
+*.class
+*.DS_Store
+test-temp
+tools-base
+out
+.knownPackages
+**/stale_outputs_checked
+**/testData/KotlinDsl/.gradle
+/tools-base

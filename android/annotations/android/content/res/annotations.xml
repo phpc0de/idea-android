@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="android.content.res.AssetManager android.content.res.AssetFileDescriptor openFd(java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager android.content.res.AssetFileDescriptor openFd(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager android.content.res.AssetFileDescriptor openNonAssetFd(int, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager android.content.res.AssetFileDescriptor openNonAssetFd(int, java.lang.String) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager android.content.res.AssetFileDescriptor openNonAssetFd(java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager android.content.res.AssetFileDescriptor openNonAssetFd(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager android.content.res.XmlResourceParser openXmlResourceParser(int, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager android.content.res.XmlResourceParser openXmlResourceParser(int, java.lang.String) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager android.content.res.XmlResourceParser openXmlResourceParser(java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager android.content.res.XmlResourceParser openXmlResourceParser(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager java.io.InputStream open(java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager java.io.InputStream open(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager java.io.InputStream open(java.lang.String, int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager java.io.InputStream open(java.lang.String, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager java.lang.String[] list(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.AssetManager java.lang.String[] list(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager.AssetInputStream int read(byte[]) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.AssetManager.AssetInputStream int read(byte[], int, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.ColorStateList ColorStateList(int[][], int[]) 1">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.content.res.ColorStateList android.content.res.ColorStateList createFromXml(android.content.res.Resources, org.xmlpull.v1.XmlPullParser)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.ColorStateList android.content.res.ColorStateList createFromXml(android.content.res.Resources, org.xmlpull.v1.XmlPullParser, android.content.res.Resources.Theme)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.ColorStateList android.content.res.ColorStateList createFromXml(android.content.res.Resources, org.xmlpull.v1.XmlPullParser, android.content.res.Resources.Theme) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.ColorStateList android.content.res.ColorStateList createFromXml(android.content.res.Resources, org.xmlpull.v1.XmlPullParser, android.content.res.Resources.Theme) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.ColorStateList android.content.res.ColorStateList createFromXml(android.content.res.Resources, org.xmlpull.v1.XmlPullParser, android.content.res.Resources.Theme) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.ColorStateList android.content.res.ColorStateList valueOf(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.ColorStateList android.content.res.ColorStateList valueOf(int) 0">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.content.res.ColorStateList android.content.res.ColorStateList withAlpha(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.ColorStateList int getChangingConfigurations()">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.pm.ActivityInfo.CONFIG_MCC, android.content.pm.ActivityInfo.CONFIG_MNC, android.content.pm.ActivityInfo.CONFIG_LOCALE, android.content.pm.ActivityInfo.CONFIG_TOUCHSCREEN, android.content.pm.ActivityInfo.CONFIG_KEYBOARD, android.content.pm.ActivityInfo.CONFIG_KEYBOARD_HIDDEN, android.content.pm.ActivityInfo.CONFIG_NAVIGATION, android.content.pm.ActivityInfo.CONFIG_ORIENTATION, android.content.pm.ActivityInfo.CONFIG_SCREEN_LAYOUT, android.content.pm.ActivityInfo.CONFIG_UI_MODE, android.content.pm.ActivityInfo.CONFIG_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_SMALLEST_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_DENSITY, android.content.pm.ActivityInfo.CONFIG_LAYOUT_DIRECTION, android.content.pm.ActivityInfo.CONFIG_COLOR_MODE, android.content.pm.ActivityInfo.CONFIG_FONT_SCALE}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.res.ColorStateList int getColorForState(int[], int) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.ColorStateList int getDefaultColor()">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.content.res.Configuration android.os.LocaleList getLocales()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Configuration boolean needNewResources(int, int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.pm.ActivityInfo.CONFIG_MCC, android.content.pm.ActivityInfo.CONFIG_MNC, android.content.pm.ActivityInfo.CONFIG_LOCALE, android.content.pm.ActivityInfo.CONFIG_TOUCHSCREEN, android.content.pm.ActivityInfo.CONFIG_KEYBOARD, android.content.pm.ActivityInfo.CONFIG_KEYBOARD_HIDDEN, android.content.pm.ActivityInfo.CONFIG_NAVIGATION, android.content.pm.ActivityInfo.CONFIG_ORIENTATION, android.content.pm.ActivityInfo.CONFIG_SCREEN_LAYOUT, android.content.pm.ActivityInfo.CONFIG_UI_MODE, android.content.pm.ActivityInfo.CONFIG_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_SMALLEST_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_DENSITY, android.content.pm.ActivityInfo.CONFIG_LAYOUT_DIRECTION, android.content.pm.ActivityInfo.CONFIG_COLOR_MODE, android.content.pm.ActivityInfo.CONFIG_FONT_SCALE}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.res.Configuration boolean needNewResources(int, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.pm.ActivityInfo.CONFIG_MCC, android.content.pm.ActivityInfo.CONFIG_MNC, android.content.pm.ActivityInfo.CONFIG_LOCALE, android.content.pm.ActivityInfo.CONFIG_TOUCHSCREEN, android.content.pm.ActivityInfo.CONFIG_KEYBOARD, android.content.pm.ActivityInfo.CONFIG_KEYBOARD_HIDDEN, android.content.pm.ActivityInfo.CONFIG_NAVIGATION, android.content.pm.ActivityInfo.CONFIG_ORIENTATION, android.content.pm.ActivityInfo.CONFIG_SCREEN_LAYOUT, android.content.pm.ActivityInfo.CONFIG_UI_MODE, android.content.pm.ActivityInfo.CONFIG_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_SMALLEST_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_DENSITY, android.content.pm.ActivityInfo.CONFIG_LAYOUT_DIRECTION, android.content.pm.ActivityInfo.CONFIG_COLOR_MODE, android.content.pm.ActivityInfo.CONFIG_FONT_SCALE}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.res.Configuration int updateFrom(android.content.res.Configuration)">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.pm.ActivityInfo.CONFIG_MCC, android.content.pm.ActivityInfo.CONFIG_MNC, android.content.pm.ActivityInfo.CONFIG_LOCALE, android.content.pm.ActivityInfo.CONFIG_TOUCHSCREEN, android.content.pm.ActivityInfo.CONFIG_KEYBOARD, android.content.pm.ActivityInfo.CONFIG_KEYBOARD_HIDDEN, android.content.pm.ActivityInfo.CONFIG_NAVIGATION, android.content.pm.ActivityInfo.CONFIG_ORIENTATION, android.content.pm.ActivityInfo.CONFIG_SCREEN_LAYOUT, android.content.pm.ActivityInfo.CONFIG_UI_MODE, android.content.pm.ActivityInfo.CONFIG_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_SMALLEST_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_DENSITY, android.content.pm.ActivityInfo.CONFIG_LAYOUT_DIRECTION, android.content.pm.ActivityInfo.CONFIG_COLOR_MODE, android.content.pm.ActivityInfo.CONFIG_FONT_SCALE}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.res.Configuration int updateFrom(android.content.res.Configuration) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Configuration screenHeightDp">
+    <annotation name="android.support.annotation.Dimension">
+      <val name="unit" val="0" />
+    </annotation>
+  </item>
+  <item name="android.content.res.Configuration screenWidthDp">
+    <annotation name="android.support.annotation.Dimension">
+      <val name="unit" val="0" />
+    </annotation>
+  </item>
+  <item name="android.content.res.Configuration smallestScreenWidthDp">
+    <annotation name="android.support.annotation.Dimension">
+      <val name="unit" val="0" />
+    </annotation>
+  </item>
+  <item name="android.content.res.Configuration void setLocale(java.util.Locale) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.Configuration void setLocales(android.os.LocaleList) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.AssetFileDescriptor openRawResourceFd(int) 0">
+    <annotation name="android.support.annotation.RawRes" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.ColorStateList getColorStateList(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.ColorStateList getColorStateList(int) 0">
+    <annotation name="android.support.annotation.ColorRes" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.ColorStateList getColorStateList(int, android.content.res.Resources.Theme)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.ColorStateList getColorStateList(int, android.content.res.Resources.Theme) 0">
+    <annotation name="android.support.annotation.ColorRes" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.ColorStateList getColorStateList(int, android.content.res.Resources.Theme) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.TypedArray obtainAttributes(android.util.AttributeSet, int[]) 1">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.TypedArray obtainTypedArray(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.TypedArray obtainTypedArray(int) 0">
+    <annotation name="android.support.annotation.ArrayRes" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.XmlResourceParser getAnimation(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.XmlResourceParser getAnimation(int) 0">
+    <annotation name="android.support.annotation.AnimatorRes" />
+    <annotation name="android.support.annotation.AnimRes" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.XmlResourceParser getLayout(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.XmlResourceParser getLayout(int) 0">
+    <annotation name="android.support.annotation.LayoutRes" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.XmlResourceParser getXml(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources android.content.res.XmlResourceParser getXml(int) 0">
+    <annotation name="android.support.annotation.XmlRes" />
+  </item>
+  <item name="android.content.res.Resources android.graphics.Movie getMovie(int) 0">
+    <annotation name="android.support.annotation.RawRes" />
+  </item>
+  <item name="android.content.res.Resources android.graphics.Typeface getFont(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources android.graphics.Typeface getFont(int) 0">
+    <annotation name="android.support.annotation.FontRes" />
+  </item>
+  <item name="android.content.res.Resources android.graphics.drawable.Drawable getDrawable(int) 0">
+    <annotation name="android.support.annotation.DrawableRes" />
+  </item>
+  <item name="android.content.res.Resources android.graphics.drawable.Drawable getDrawable(int, android.content.res.Resources.Theme) 0">
+    <annotation name="android.support.annotation.DrawableRes" />
+  </item>
+  <item name="android.content.res.Resources android.graphics.drawable.Drawable getDrawable(int, android.content.res.Resources.Theme) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.Resources android.graphics.drawable.Drawable getDrawableForDensity(int, int)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.Resources android.graphics.drawable.Drawable getDrawableForDensity(int, int) 0">
+    <annotation name="android.support.annotation.DrawableRes" />
+  </item>
+  <item name="android.content.res.Resources android.graphics.drawable.Drawable getDrawableForDensity(int, int, android.content.res.Resources.Theme)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.Resources android.graphics.drawable.Drawable getDrawableForDensity(int, int, android.content.res.Resources.Theme) 0">
+    <annotation name="android.support.annotation.DrawableRes" />
+  </item>
+  <item name="android.content.res.Resources android.graphics.drawable.Drawable getDrawableForDensity(int, int, android.content.res.Resources.Theme) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.Resources boolean getBoolean(int) 0">
+    <annotation name="android.support.annotation.BoolRes" />
+  </item>
+  <item name="android.content.res.Resources float getDimension(int)">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.Resources float getDimension(int) 0">
+    <annotation name="android.support.annotation.DimenRes" />
+  </item>
+  <item name="android.content.res.Resources float getFraction(int, int, int) 0">
+    <annotation name="android.support.annotation.FractionRes" />
+  </item>
+  <item name="android.content.res.Resources int getColor(int)">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.content.res.Resources int getColor(int) 0">
+    <annotation name="android.support.annotation.ColorRes" />
+  </item>
+  <item name="android.content.res.Resources int getColor(int, android.content.res.Resources.Theme)">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.content.res.Resources int getColor(int, android.content.res.Resources.Theme) 0">
+    <annotation name="android.support.annotation.ColorRes" />
+  </item>
+  <item name="android.content.res.Resources int getColor(int, android.content.res.Resources.Theme) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.Resources int getDimensionPixelOffset(int)">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.Resources int getDimensionPixelOffset(int) 0">
+    <annotation name="android.support.annotation.DimenRes" />
+  </item>
+  <item name="android.content.res.Resources int getDimensionPixelSize(int)">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.Resources int getDimensionPixelSize(int) 0">
+    <annotation name="android.support.annotation.DimenRes" />
+  </item>
+  <item name="android.content.res.Resources int getInteger(int) 0">
+    <annotation name="android.support.annotation.IntegerRes" />
+  </item>
+  <item name="android.content.res.Resources int[] getIntArray(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources int[] getIntArray(int) 0">
+    <annotation name="android.support.annotation.ArrayRes" />
+  </item>
+  <item name="android.content.res.Resources java.io.InputStream openRawResource(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources java.io.InputStream openRawResource(int) 0">
+    <annotation name="android.support.annotation.RawRes" />
+  </item>
+  <item name="android.content.res.Resources java.io.InputStream openRawResource(int, android.util.TypedValue)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources java.io.InputStream openRawResource(int, android.util.TypedValue) 0">
+    <annotation name="android.support.annotation.RawRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.CharSequence getQuantityText(int, int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources java.lang.CharSequence getQuantityText(int, int) 0">
+    <annotation name="android.support.annotation.PluralsRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.CharSequence getText(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources java.lang.CharSequence getText(int) 0">
+    <annotation name="android.support.annotation.StringRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.CharSequence getText(int, java.lang.CharSequence) 0">
+    <annotation name="android.support.annotation.StringRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.CharSequence[] getTextArray(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources java.lang.CharSequence[] getTextArray(int) 0">
+    <annotation name="android.support.annotation.ArrayRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getQuantityString(int, int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getQuantityString(int, int) 0">
+    <annotation name="android.support.annotation.PluralsRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getQuantityString(int, int, java.lang.Object...)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getQuantityString(int, int, java.lang.Object...) 0">
+    <annotation name="android.support.annotation.PluralsRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getResourceEntryName(int) 0">
+    <annotation name="android.support.annotation.AnyRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getResourceName(int) 0">
+    <annotation name="android.support.annotation.AnyRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getResourcePackageName(int) 0">
+    <annotation name="android.support.annotation.AnyRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getResourceTypeName(int) 0">
+    <annotation name="android.support.annotation.AnyRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getString(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getString(int) 0">
+    <annotation name="android.support.annotation.StringRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getString(int, java.lang.Object...)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String getString(int, java.lang.Object...) 0">
+    <annotation name="android.support.annotation.StringRes" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String[] getStringArray(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.res.Resources java.lang.String[] getStringArray(int) 0">
+    <annotation name="android.support.annotation.ArrayRes" />
+  </item>
+  <item name="android.content.res.Resources void getValue(int, android.util.TypedValue, boolean) 0">
+    <annotation name="android.support.annotation.AnyRes" />
+  </item>
+  <item name="android.content.res.Resources void getValueForDensity(int, int, android.util.TypedValue, boolean) 0">
+    <annotation name="android.support.annotation.AnyRes" />
+  </item>
+  <item name="android.content.res.Resources.Theme android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet, int[], int, int) 1">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.Resources.Theme android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet, int[], int, int) 2">
+    <annotation name="android.support.annotation.AttrRes" />
+  </item>
+  <item name="android.content.res.Resources.Theme android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet, int[], int, int) 3">
+    <annotation name="android.support.annotation.StyleRes" />
+  </item>
+  <item name="android.content.res.Resources.Theme android.content.res.TypedArray obtainStyledAttributes(int, int[]) 0">
+    <annotation name="android.support.annotation.StyleRes" />
+  </item>
+  <item name="android.content.res.Resources.Theme android.content.res.TypedArray obtainStyledAttributes(int, int[]) 1">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.Resources.Theme android.content.res.TypedArray obtainStyledAttributes(int[]) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.Resources.Theme android.graphics.drawable.Drawable getDrawable(int) 0">
+    <annotation name="android.support.annotation.DrawableRes" />
+  </item>
+  <item name="android.content.res.Resources.Theme int getChangingConfigurations()">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.pm.ActivityInfo.CONFIG_MCC, android.content.pm.ActivityInfo.CONFIG_MNC, android.content.pm.ActivityInfo.CONFIG_LOCALE, android.content.pm.ActivityInfo.CONFIG_TOUCHSCREEN, android.content.pm.ActivityInfo.CONFIG_KEYBOARD, android.content.pm.ActivityInfo.CONFIG_KEYBOARD_HIDDEN, android.content.pm.ActivityInfo.CONFIG_NAVIGATION, android.content.pm.ActivityInfo.CONFIG_ORIENTATION, android.content.pm.ActivityInfo.CONFIG_SCREEN_LAYOUT, android.content.pm.ActivityInfo.CONFIG_UI_MODE, android.content.pm.ActivityInfo.CONFIG_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_SMALLEST_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_DENSITY, android.content.pm.ActivityInfo.CONFIG_LAYOUT_DIRECTION, android.content.pm.ActivityInfo.CONFIG_COLOR_MODE, android.content.pm.ActivityInfo.CONFIG_FONT_SCALE}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.res.TypedArray android.content.res.ColorStateList getColorStateList(int)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.TypedArray android.content.res.ColorStateList getColorStateList(int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray android.graphics.Typeface getFont(int)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.TypedArray android.graphics.Typeface getFont(int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray android.graphics.drawable.Drawable getDrawable(int)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.TypedArray android.graphics.drawable.Drawable getDrawable(int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray android.util.TypedValue peekValue(int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray boolean getBoolean(int, boolean) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray boolean getValue(int, android.util.TypedValue) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray boolean hasValue(int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray boolean hasValueOrEmpty(int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray float getDimension(int, float)">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.TypedArray float getDimension(int, float) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray float getDimension(int, float) 1">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.TypedArray float getFloat(int, float) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray float getFraction(int, int, int, float) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray int getChangingConfigurations()">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.pm.ActivityInfo.CONFIG_MCC, android.content.pm.ActivityInfo.CONFIG_MNC, android.content.pm.ActivityInfo.CONFIG_LOCALE, android.content.pm.ActivityInfo.CONFIG_TOUCHSCREEN, android.content.pm.ActivityInfo.CONFIG_KEYBOARD, android.content.pm.ActivityInfo.CONFIG_KEYBOARD_HIDDEN, android.content.pm.ActivityInfo.CONFIG_NAVIGATION, android.content.pm.ActivityInfo.CONFIG_ORIENTATION, android.content.pm.ActivityInfo.CONFIG_SCREEN_LAYOUT, android.content.pm.ActivityInfo.CONFIG_UI_MODE, android.content.pm.ActivityInfo.CONFIG_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_SMALLEST_SCREEN_SIZE, android.content.pm.ActivityInfo.CONFIG_DENSITY, android.content.pm.ActivityInfo.CONFIG_LAYOUT_DIRECTION, android.content.pm.ActivityInfo.CONFIG_COLOR_MODE, android.content.pm.ActivityInfo.CONFIG_FONT_SCALE}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.res.TypedArray int getColor(int, int)">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.content.res.TypedArray int getColor(int, int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray int getColor(int, int) 1">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.content.res.TypedArray int getDimensionPixelOffset(int, int)">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.TypedArray int getDimensionPixelOffset(int, int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray int getDimensionPixelOffset(int, int) 1">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.TypedArray int getDimensionPixelSize(int, int)">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.TypedArray int getDimensionPixelSize(int, int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray int getDimensionPixelSize(int, int) 1">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.TypedArray int getInt(int, int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray int getInteger(int, int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray int getLayoutDimension(int, int)">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.TypedArray int getLayoutDimension(int, int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray int getLayoutDimension(int, int) 1">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.TypedArray int getLayoutDimension(int, java.lang.String)">
+    <annotation name="android.support.annotation.Px" />
+  </item>
+  <item name="android.content.res.TypedArray int getLayoutDimension(int, java.lang.String) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray int getResourceId(int, int)">
+    <annotation name="android.support.annotation.AnyRes" />
+  </item>
+  <item name="android.content.res.TypedArray int getResourceId(int, int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray int getType(int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray java.lang.CharSequence getText(int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray java.lang.CharSequence[] getTextArray(int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray java.lang.String getNonResourceString(int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+  <item name="android.content.res.TypedArray java.lang.String getString(int)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.res.TypedArray java.lang.String getString(int) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+  </item>
+</root>
+

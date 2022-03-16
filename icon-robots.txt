@@ -1,0 +1,3 @@
+skip: android/**/*
+skip: designer/**/*
+skip: smali/**/*

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="android.media.tv.TvContentRating boolean contains(android.media.tv.TvContentRating) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvContract android.net.Uri buildChannelUri(long)">
+    <annotation name="android.support.annotation.RequiresPermission.Read">
+      <val name="value" val="&quot;com.android.providers.tv.permission.READ_EPG_DATA&quot;" />
+    </annotation>
+    <annotation name="android.support.annotation.RequiresPermission.Write">
+      <val name="value" val="&quot;com.android.providers.tv.permission.WRITE_EPG_DATA&quot;" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvContract android.net.Uri buildChannelsUriForInput(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.media.tv.TvContract boolean isChannelUri(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvContract boolean isChannelUriForPassthroughInput(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvContract boolean isChannelUriForTunerInput(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvContract boolean isProgramUri(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvContract boolean isRecordedProgramUri(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvContract.Channels CONTENT_URI">
+    <annotation name="android.support.annotation.RequiresPermission.Read">
+      <val name="value" val="&quot;com.android.providers.tv.permission.READ_EPG_DATA&quot;" />
+    </annotation>
+    <annotation name="android.support.annotation.RequiresPermission.Write">
+      <val name="value" val="&quot;com.android.providers.tv.permission.WRITE_EPG_DATA&quot;" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvContract.Channels java.lang.String getVideoResolution(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.media.tv.TvContract.Channels java.lang.String getVideoResolution(java.lang.String) 0">
+    <annotation name="android.support.annotation.StringDef">
+      <val name="value" val="{android.media.tv.TvContract.Channels.VIDEO_FORMAT_240P, android.media.tv.TvContract.Channels.VIDEO_FORMAT_360P, android.media.tv.TvContract.Channels.VIDEO_FORMAT_480I, android.media.tv.TvContract.Channels.VIDEO_FORMAT_576I, android.media.tv.TvContract.Channels.VIDEO_FORMAT_576P, android.media.tv.TvContract.Channels.VIDEO_FORMAT_720P, android.media.tv.TvContract.Channels.VIDEO_FORMAT_1080I, android.media.tv.TvContract.Channels.VIDEO_FORMAT_1080P, android.media.tv.TvContract.Channels.VIDEO_FORMAT_2160P, android.media.tv.TvContract.Channels.VIDEO_FORMAT_4320P}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvContract.Programs.Genres java.lang.String encode(java.lang.String...) 0">
+    <annotation name="android.support.annotation.NonNull" />
+    <annotation name="android.support.annotation.StringDef">
+      <val name="value" val="{android.media.tv.TvContract.Programs.Genres.FAMILY_KIDS, android.media.tv.TvContract.Programs.Genres.SPORTS, android.media.tv.TvContract.Programs.Genres.SHOPPING, android.media.tv.TvContract.Programs.Genres.MOVIES, android.media.tv.TvContract.Programs.Genres.COMEDY, android.media.tv.TvContract.Programs.Genres.TRAVEL, android.media.tv.TvContract.Programs.Genres.DRAMA, android.media.tv.TvContract.Programs.Genres.EDUCATION, android.media.tv.TvContract.Programs.Genres.ANIMAL_WILDLIFE, android.media.tv.TvContract.Programs.Genres.NEWS, android.media.tv.TvContract.Programs.Genres.GAMING, android.media.tv.TvContract.Programs.Genres.ARTS, android.media.tv.TvContract.Programs.Genres.ENTERTAINMENT, android.media.tv.TvContract.Programs.Genres.LIFE_STYLE, android.media.tv.TvContract.Programs.Genres.MUSIC, android.media.tv.TvContract.Programs.Genres.PREMIER, android.media.tv.TvContract.Programs.Genres.TECH_SCIENCE}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvContract.Programs.Genres java.lang.String[] decode(java.lang.String)">
+    <annotation name="android.support.annotation.StringDef">
+      <val name="value" val="{android.media.tv.TvContract.Programs.Genres.FAMILY_KIDS, android.media.tv.TvContract.Programs.Genres.SPORTS, android.media.tv.TvContract.Programs.Genres.SHOPPING, android.media.tv.TvContract.Programs.Genres.MOVIES, android.media.tv.TvContract.Programs.Genres.COMEDY, android.media.tv.TvContract.Programs.Genres.TRAVEL, android.media.tv.TvContract.Programs.Genres.DRAMA, android.media.tv.TvContract.Programs.Genres.EDUCATION, android.media.tv.TvContract.Programs.Genres.ANIMAL_WILDLIFE, android.media.tv.TvContract.Programs.Genres.NEWS, android.media.tv.TvContract.Programs.Genres.GAMING, android.media.tv.TvContract.Programs.Genres.ARTS, android.media.tv.TvContract.Programs.Genres.ENTERTAINMENT, android.media.tv.TvContract.Programs.Genres.LIFE_STYLE, android.media.tv.TvContract.Programs.Genres.MUSIC, android.media.tv.TvContract.Programs.Genres.PREMIER, android.media.tv.TvContract.Programs.Genres.TECH_SCIENCE}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvContract.Programs.Genres java.lang.String[] decode(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputInfo android.graphics.drawable.Drawable loadIcon(android.content.Context) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputInfo int getType()">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.media.tv.TvInputInfo.TYPE_TUNER, android.media.tv.TvInputInfo.TYPE_OTHER, android.media.tv.TvInputInfo.TYPE_COMPOSITE, android.media.tv.TvInputInfo.TYPE_SVIDEO, android.media.tv.TvInputInfo.TYPE_SCART, android.media.tv.TvInputInfo.TYPE_COMPONENT, android.media.tv.TvInputInfo.TYPE_VGA, android.media.tv.TvInputInfo.TYPE_DVI, android.media.tv.TvInputInfo.TYPE_HDMI, android.media.tv.TvInputInfo.TYPE_DISPLAY_PORT}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvInputInfo java.lang.CharSequence loadLabel(android.content.Context) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputInfo void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputManager">
+    <annotation name="android.support.annotation.SystemService">
+      <val name="value" val="android.content.Context.TV_INPUT_SERVICE" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvInputManager android.media.tv.TvInputInfo getTvInputInfo(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.media.tv.TvInputManager android.media.tv.TvInputInfo getTvInputInfo(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputManager boolean isRatingBlocked(android.media.tv.TvContentRating) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputManager int getInputState(java.lang.String)">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.media.tv.TvInputManager.INPUT_STATE_CONNECTED, android.media.tv.TvInputManager.INPUT_STATE_CONNECTED_STANDBY, android.media.tv.TvInputManager.INPUT_STATE_DISCONNECTED}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvInputManager int getInputState(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputManager void registerCallback(android.media.tv.TvInputManager.TvInputCallback, android.os.Handler) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputManager void registerCallback(android.media.tv.TvInputManager.TvInputCallback, android.os.Handler) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputManager void unregisterCallback(android.media.tv.TvInputManager.TvInputCallback) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputManager void updateTvInputInfo(android.media.tv.TvInputInfo) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputManager.TvInputCallback void onInputStateChanged(java.lang.String, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.media.tv.TvInputManager.INPUT_STATE_CONNECTED, android.media.tv.TvInputManager.INPUT_STATE_CONNECTED_STANDBY, android.media.tv.TvInputManager.INPUT_STATE_DISCONNECTED}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvInputService android.media.tv.TvInputService.RecordingSession onCreateRecordingSession(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.media.tv.TvInputService android.media.tv.TvInputService.Session onCreateSession(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.media.tv.TvInputService.RecordingSession void notifyError(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.media.tv.TvInputManager.RECORDING_ERROR_UNKNOWN, android.media.tv.TvInputManager.RECORDING_ERROR_INSUFFICIENT_SPACE, android.media.tv.TvInputManager.RECORDING_ERROR_RESOURCE_BUSY}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvInputService.RecordingSession void onAppPrivateCommand(java.lang.String, android.os.Bundle) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputService.RecordingSession void onStartRecording(android.net.Uri) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.media.tv.TvInputService.Session boolean onSelectTrack(int, java.lang.String) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.media.tv.TvInputService.Session boolean onSetSurface(android.view.Surface) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.media.tv.TvInputService.Session void notifyContentBlocked(android.media.tv.TvContentRating) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputService.Session void notifyTimeShiftStatusChanged(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.media.tv.TvInputManager.TIME_SHIFT_STATUS_UNKNOWN, android.media.tv.TvInputManager.TIME_SHIFT_STATUS_UNSUPPORTED, android.media.tv.TvInputManager.TIME_SHIFT_STATUS_UNAVAILABLE, android.media.tv.TvInputManager.TIME_SHIFT_STATUS_AVAILABLE}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvInputService.Session void notifyVideoUnavailable(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.media.tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_UNKNOWN, android.media.tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_TUNING, android.media.tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL, android.media.tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_BUFFERING, android.media.tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvInputService.Session void onAppPrivateCommand(java.lang.String, android.os.Bundle) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvInputService.Session void onSetStreamVolume(float) 0">
+    <annotation name="android.support.annotation.FloatRange">
+      <val name="from" val="0.0" />
+      <val name="to" val="1.0" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvRecordingClient TvRecordingClient(android.content.Context, java.lang.String, android.media.tv.TvRecordingClient.RecordingCallback, android.os.Handler) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvRecordingClient void sendAppPrivateCommand(java.lang.String, android.os.Bundle) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvRecordingClient void startRecording(android.net.Uri) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.media.tv.TvRecordingClient.RecordingCallback void onError(int) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.media.tv.TvInputManager.RECORDING_ERROR_UNKNOWN, android.media.tv.TvInputManager.RECORDING_ERROR_INSUFFICIENT_SPACE, android.media.tv.TvInputManager.RECORDING_ERROR_RESOURCE_BUSY}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvTrackInfo int getType()">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.media.tv.TvTrackInfo.TYPE_AUDIO, android.media.tv.TvTrackInfo.TYPE_VIDEO, android.media.tv.TvTrackInfo.TYPE_SUBTITLE}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvTrackInfo.Builder Builder(int, java.lang.String) 0">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.media.tv.TvTrackInfo.TYPE_AUDIO, android.media.tv.TvTrackInfo.TYPE_VIDEO, android.media.tv.TvTrackInfo.TYPE_SUBTITLE}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvTrackInfo.Builder Builder(int, java.lang.String) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvView void sendAppPrivateCommand(java.lang.String, android.os.Bundle) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvView void setCallback(android.media.tv.TvView.TvInputCallback) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.media.tv.TvView void setStreamVolume(float) 0">
+    <annotation name="android.support.annotation.FloatRange">
+      <val name="from" val="0.0" />
+      <val name="to" val="1.0" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvView void setTimeShiftPositionCallback(android.media.tv.TvView.TimeShiftPositionCallback) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.media.tv.TvView void timeShiftSetPlaybackParams(android.media.PlaybackParams) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvView void tune(java.lang.String, android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.media.tv.TvView.TvInputCallback void onTimeShiftStatusChanged(java.lang.String, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.media.tv.TvInputManager.TIME_SHIFT_STATUS_UNKNOWN, android.media.tv.TvInputManager.TIME_SHIFT_STATUS_UNSUPPORTED, android.media.tv.TvInputManager.TIME_SHIFT_STATUS_UNAVAILABLE, android.media.tv.TvInputManager.TIME_SHIFT_STATUS_AVAILABLE}" />
+    </annotation>
+  </item>
+  <item name="android.media.tv.TvView.TvInputCallback void onVideoUnavailable(java.lang.String, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.media.tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_UNKNOWN, android.media.tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_TUNING, android.media.tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL, android.media.tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_BUFFERING, android.media.tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY}" />
+    </annotation>
+  </item>
+</root>
+

@@ -1,0 +1,669 @@
+<!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<palette>
+  <group name="Text">
+    <item tag="TextView" suggested="true" materialReference="https://material.io/guidelines/components/text-fields.html"/>
+    <item tag="EditText" title="Plain Text" suggested="true"
+          materialReference="https://material.io/guidelines/components/text-fields.html"
+          icon="StudioIcons.LayoutEditor.Palette.TEXTFIELD">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="textPersonName"
+              android:text="Name"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="EditText" id="Password" title="Password"
+          materialReference="https://material.io/guidelines/components/text-fields.html#text-fields-input-types"
+          icon="StudioIcons.LayoutEditor.Palette.PASSWORD_TEXTFIELD">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="textPassword"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="EditText" id="PasswordNumeric" title="Password (Numeric)"
+          materialReference="https://material.io/guidelines/components/text-fields.html#text-fields-input-types"
+          icon="StudioIcons.LayoutEditor.Palette.PASSWORD_NUMERIC_TEXTFIELD">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="numberPassword"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="EditText" id="Email" title="E-mail"
+          materialReference="https://material.io/guidelines/components/text-fields.html#text-fields-input-types"
+          icon="StudioIcons.LayoutEditor.Palette.EMAIL_TEXTFIELD">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="textEmailAddress"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="EditText" id="Phone" title="Phone"
+          materialReference="https://material.io/guidelines/components/text-fields.html#text-fields-input-types"
+          icon="StudioIcons.LayoutEditor.Palette.PHONE_TEXTFIELD">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="phone"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="EditText" id="PostalAddress" title="Postal Address"
+          materialReference="https://material.io/guidelines/components/text-fields.html#text-fields-input-types"
+          icon="StudioIcons.LayoutEditor.Palette.POSTAL_ADDRESS_TEXTFIELD">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="textPostalAddress"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="EditText" id="MultilineText" title="Multiline Text"
+          materialReference="https://material.io/guidelines/components/text-fields.html#text-fields-input-types"
+          icon="StudioIcons.LayoutEditor.Palette.TEXTFIELD_MULTILINE">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="textMultiLine"
+              android:gravity="start|top"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="EditText" id="Time" title="Time"
+          materialReference="https://material.io/guidelines/components/text-fields.html#text-fields-input-types"
+          icon="StudioIcons.LayoutEditor.Palette.TIME_TEXTFIELD">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="time"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="EditText" id="Date" title="Date"
+          materialReference="https://material.io/guidelines/components/text-fields.html#text-fields-input-types"
+          icon="StudioIcons.LayoutEditor.Palette.DATE_TEXTFIELD">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="date"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="EditText" id="Number" title="Number"
+          materialReference="https://material.io/guidelines/components/text-fields.html#text-fields-input-types"
+          icon="StudioIcons.LayoutEditor.Palette.NUMBER_TEXTFIELD">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="number"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="EditText" id="SignedNumber" title="Number (Signed)"
+          materialReference="https://material.io/guidelines/components/text-fields.html#text-fields-input-types"
+          icon="StudioIcons.LayoutEditor.Palette.NUMBER_SIGNED_TEXTFIELD">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="numberSigned"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="EditText" id="DecimalNumber" title="Number (Decimal)"
+          materialReference="https://material.io/guidelines/components/text-fields.html#text-fields-input-types"
+          icon="StudioIcons.LayoutEditor.Palette.NUMBER_DECIMAL_TEXTFIELD">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="numberDecimal"
+              android:ems="10"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="AutoCompleteTextView" materialReference="https://material.io/guidelines/components/text-fields.html"/>
+    <item tag="MultiAutoCompleteTextView" materialReference="https://material.io/guidelines/components/text-fields.html"/>
+    <item tag="CheckedTextView" materialReference="https://material.io/guidelines/components/selection-controls.html"/>
+    <item tag="android.support.design.widget.TextInputLayout" suggested="true" meta="material"/>
+    <item tag="com.google.android.material.textfield.TextInputLayout" suggested="true" meta="material"/>
+  </group>
+  <group name="Buttons">
+    <item tag="Button" suggested="true" materialReference="https://material.io/guidelines/components/buttons.html"/>
+    <item tag="ImageButton" suggested="true"/>
+    <item tag="com.google.android.material.chip.ChipGroup" suggested="true"  meta="material" info="new-m2">
+      <xml>
+        <![CDATA[
+            <com.google.android.material.chip.ChipGroup
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+            </com.google.android.material.chip.ChipGroup>
+          ]]>
+      </xml>
+    </item>
+    <item tag="com.google.android.material.chip.Chip" suggested="true" meta="material" info="new-m2"/>
+    <item tag="CheckBox" suggested="true" materialReference="https://material.io/guidelines/components/selection-controls.html"/>
+    <item tag="RadioGroup" materialReference="https://material.io/guidelines/selection-controls.html#selection-controls-radio-button"/>
+    <item tag="RadioButton" suggested="true" materialReference="https://material.io/guidelines/components/selection-controls.html"/>
+    <item tag="ToggleButton" suggested="true" materialReference="https://material.io/guidelines/components/buttons.html#buttons-toggle-buttons"/>
+    <item tag="Switch" suggested="true"
+          materialReference="https://material.io/guidelines/components/selection-controls.html#selection-controls-switch"/>
+    <item tag="android.support.design.widget.FloatingActionButton" suggested="true" meta="material"
+          materialReference="https://material.io/guidelines/components/buttons-floating-action-button.html#buttons-floating-action-button-floating-action-button"/>
+    <item tag="com.google.android.material.floatingactionbutton.FloatingActionButton" suggested="true" meta="material"
+          materialReference="https://material.io/guidelines/components/buttons-floating-action-button.html#buttons-floating-action-button-floating-action-button"/>
+  </group>
+  <group name="Widgets">
+    <item tag="View"/>
+    <item tag="ImageView" suggested="true"/>
+    <item tag="WebView" suggested="true"/>
+    <item tag="VideoView"/>
+    <item tag="CalendarView"/>
+    <item tag="ProgressBar"
+          materialReference="https://material.io/guidelines/components/progress-activity.html"
+          suggested="true"
+          title="ProgressBar">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <ProgressBar
+              style="?android:attr/progressBarStyle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="ProgressBar"
+          materialReference="https://material.io/guidelines/components/progress-activity.html"
+          id="HorizontalProgressBar"
+          suggested="true"
+          icon="StudioIcons.LayoutEditor.Palette.PROGRESS_BAR_HORIZONTAL"
+          title="ProgressBar (Horizontal)">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <ProgressBar
+              style="?android:attr/progressBarStyleHorizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="SeekBar" suggested="true" materialReference="https://material.io/guidelines/components/sliders.html"/>
+    <item tag="SeekBar"
+          materialReference="https://material.io/guidelines/components/sliders.html"
+          id="DiscreteSeekBar"
+          icon="StudioIcons.LayoutEditor.Palette.SEEK_BAR_DISCRETE"
+          title="SeekBar (Discrete)">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <SeekBar
+              style="@style/Widget.AppCompat.SeekBar.Discrete"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:max="10"
+              android:progress="3"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="RatingBar" materialReference="https://material.io/guidelines/components/sliders.html"/>
+    <item tag="SearchView"/>
+    <item tag="TextureView"/>
+    <item tag="SurfaceView"/>
+    <item tag="View"
+          id="divider1"
+          icon="StudioIcons.LayoutEditor.Palette.HORIZONTAL_DIVIDER"
+          title="Horizontal Divider">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <View
+              android:id="@+id/divider1"
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="?android:attr/listDivider"
+            />
+          ]]>
+      </xml>
+    </item>
+    <item tag="View"
+          id="divider2"
+          icon="StudioIcons.LayoutEditor.Palette.VERTICAL_DIVIDER"
+          title="Vertical Divider">
+      <xml reuse="drag-preview">
+        <![CDATA[
+            <View
+              android:id="@+id/divider2"
+              android:layout_width="1dp"
+              android:layout_height="match_parent"
+              android:background="?android:attr/listDivider"
+            />
+          ]]>
+      </xml>
+    </item>
+  </group>
+  <group name="Layouts">
+    <item tag="android.support.constraint.ConstraintLayout" suggested="true"
+          materialReference="https://material.io/guidelines/layout/principles.html"/>
+    <item tag="androidx.constraintlayout.widget.ConstraintLayout" suggested="true"
+          materialReference="https://material.io/guidelines/layout/principles.html"/>
+    <item tag="LinearLayout"
+          title="LinearLayout (horizontal)"
+          suggested="true"
+          id="HorizontalGuideline"
+          icon="StudioIcons.LayoutEditor.Palette.LINEAR_LAYOUT_HORZ">
+      <xml>
+        <![CDATA[
+            <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+            </LinearLayout>
+          ]]>
+      </xml>
+    </item>
+    <item tag="LinearLayout"
+          title="LinearLayout (vertical)"
+          suggested="true"
+          id="VerticalLinearLayout"
+          icon="StudioIcons.LayoutEditor.Palette.LINEAR_LAYOUT_VERT">
+      <xml>
+        <![CDATA[
+            <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+            </LinearLayout>
+          ]]>
+      </xml>
+    </item>
+    <item tag="FrameLayout"/>
+    <item tag="TableLayout"/>
+    <item tag="TableRow"/>
+    <item tag="Space"/>
+    <!--
+    TODO: Uncomment this once flag for Flexbox is enabled
+    <item tag="com.google.android.flexbox.FlexboxLayout"/>
+    -->
+  </group>
+  <group name="Containers">
+    <item tag="Spinner"/>
+    <item tag="android.support.v7.widget.RecyclerView" suggested="true" materialReference="https://material.io/guidelines/components/lists.html"/>
+    <item tag="androidx.recyclerview.widget.RecyclerView" suggested="true" materialReference="https://material.io/guidelines/components/lists.html"/>
+    <item tag="ScrollView"/>
+    <item tag="HorizontalScrollView" suggested="true"/>
+
+    <item tag="android.support.v4.widget.NestedScrollView" suggested="true"/>
+    <item tag="androidx.core.widget.NestedScrollView" suggested="true"/>
+    <item tag="androidx.viewpager2.widget.ViewPager2"
+          icon="StudioIcons.LayoutEditor.Palette.VIEW_PAGER" />
+    <item tag="android.support.v7.widget.CardView" suggested="true" materialReference="https://material.io/guidelines/components/cards.html"/>
+    <item tag="androidx.cardview.widget.CardView" suggested="true" materialReference="https://material.io/guidelines/components/cards.html"/>
+    <item tag="android.support.design.widget.AppBarLayout" suggested="true" meta="material"/>
+    <item tag="com.google.android.material.appbar.AppBarLayout" suggested="true" meta="material"/>
+    <item tag="com.google.android.material.bottomappbar.BottomAppBar" suggested="true" meta="material" info="new-m2"/>
+    <item tag="android.support.design.widget.NavigationView" suggested="true" meta="material"/>
+    <item tag="com.google.android.material.navigation.NavigationView" suggested="true" meta="material"/>
+    <item tag="android.support.design.widget.BottomNavigationView" suggested="true" meta="material"/>
+    <item tag="com.google.android.material.bottomnavigation.BottomNavigationView" suggested="true" meta="material"/>
+    <item tag="android.support.v7.widget.Toolbar" suggested="true" materialReference="https://material.io/guidelines/components/toolbars.html"/>
+    <item tag="androidx.appcompat.widget.Toolbar" suggested="true" materialReference="https://material.io/guidelines/components/toolbars.html"/>
+    <item tag="android.support.design.widget.TabLayout" suggested="true" meta="material"
+          materialReference="https://material.io/guidelines/components/tabs.html"/>
+    <item tag="com.google.android.material.tabs.TabLayout" suggested="true" meta="material"
+          materialReference="https://material.io/guidelines/components/tabs.html"/>
+    <item tag="android.support.design.widget.TabItem" meta="material"
+          materialReference="https://material.io/guidelines/components/tabs.html"/>
+    <item tag="com.google.android.material.tabs.TabItem" meta="material"
+          materialReference="https://material.io/guidelines/components/tabs.html"/>
+
+    <item tag="ViewStub"/>
+    <item tag="include"/>
+    <item tag="androidx.fragment.app.FragmentContainerView" />
+    <item tag="androidx.fragment.app.FragmentContainerView" title="NavHostFragment" suggested="true" id="NavHostFragment"
+          icon="StudioIcons.LayoutEditor.Palette.NAV_HOST_FRAGMENT">
+    <xml>
+        <![CDATA[
+            <androidx.fragment.app.FragmentContainerView
+              android:name="androidx.navigation.fragment.NavHostFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+          ]]>
+      </xml>
+    </item>
+    <item tag="view"/>
+    <item tag="requestFocus"/>
+  </group>
+  <group name="Helpers">
+    <item tag="android.support.constraint.Group"
+          suggested="true"
+          title="Group"
+          icon="StudioIcons.LayoutEditor.Palette.GROUP">
+      <xml>
+        <![CDATA[
+            <android.support.constraint.Group
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               />
+          ]]>
+      </xml>
+    </item>
+    <item tag="androidx.constraintlayout.widget.Group"
+          suggested="true"
+          title="Group"
+          icon="StudioIcons.LayoutEditor.Palette.GROUP">
+      <xml>
+        <![CDATA[
+            <androidx.constraintlayout.widget.Group
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               />
+          ]]>
+      </xml>
+    </item>
+    <item tag="android.support.constraint.Barrier"
+          id="horizontalBarrierAndroidSupport"
+          suggested="true"
+          title="Barrier (Horizontal)"
+          icon="StudioIcons.LayoutEditor.Palette.BARRIER_HORIZONTAL">
+      <xml>
+        <![CDATA[
+            <android.support.constraint.Barrier
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:barrierDirection="top" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="androidx.constraintlayout.widget.Barrier"
+          id="horizontalBarrierAndroidx"
+          suggested="true"
+          title="Barrier (Horizontal)"
+          icon="StudioIcons.LayoutEditor.Palette.BARRIER_HORIZONTAL">
+      <xml>
+        <![CDATA[
+            <androidx.constraintlayout.widget.Barrier
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:barrierDirection="top" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="android.support.constraint.Barrier"
+          id="verticalBarrierAndroidSupport"
+          suggested="true"
+          title="Barrier (Vertical)"
+          icon="StudioIcons.LayoutEditor.Palette.BARRIER_VERTICAL">
+      <xml>
+        <![CDATA[
+            <android.support.constraint.Barrier
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:barrierDirection="left" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="androidx.constraintlayout.widget.Barrier"
+          id="verticalBarrierAndroidx"
+          suggested="true"
+          title="Barrier (Vertical)"
+          icon="StudioIcons.LayoutEditor.Palette.BARRIER_VERTICAL">
+      <xml>
+        <![CDATA[
+            <androidx.constraintlayout.widget.Barrier
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:barrierDirection="left" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="android.support.constraint.helper.Flow" suggested="true">
+      <xml>
+        <![CDATA[
+            <android.support.constraint.helper.Flow
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="androidx.constraintlayout.helper.widget.Flow" suggested="true">
+      <xml>
+        <![CDATA[
+            <androidx.constraintlayout.helper.widget.Flow
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="android.support.constraint.Guideline"
+          title="Guideline (Horizontal)"
+          suggested="true"
+          icon="StudioIcons.LayoutEditor.Palette.GUIDELINE_HORIZONTAL">
+      <xml>
+        <![CDATA[
+            <android.support.constraint.Guideline
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="androidx.constraintlayout.widget.Guideline"
+          title="Guideline (Horizontal)"
+          suggested="true"
+          icon="StudioIcons.LayoutEditor.Palette.GUIDELINE_HORIZONTAL">
+      <xml>
+        <![CDATA[
+            <androidx.constraintlayout.widget.Guideline
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="android.support.constraint.Guideline"
+          title="Guideline (Vertical)"
+          suggested="true"
+          id="VerticalGuideline"
+          icon="StudioIcons.LayoutEditor.Palette.GUIDELINE_VERTICAL">
+      <xml>
+        <![CDATA[
+            <android.support.constraint.Guideline
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="androidx.constraintlayout.widget.Guideline"
+          title="Guideline (Vertical)"
+          suggested="true"
+          id="VerticalGuideline2"
+          icon="StudioIcons.LayoutEditor.Palette.GUIDELINE_VERTICAL">
+      <xml>
+        <![CDATA[
+            <androidx.constraintlayout.widget.Guideline
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="android.support.constraint.helper.Layer"
+          title="Layer"
+          suggested="true"
+          icon="StudioIcons.LayoutEditor.Palette.LAYER">
+      <xml>
+        <![CDATA[
+            <android.support.constraint.helper.Layer
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="androidx.constraintlayout.helper.widget.Layer"
+          title="Layer"
+          suggested="true"
+          icon="StudioIcons.LayoutEditor.Palette.LAYER">
+      <xml>
+        <![CDATA[
+            <androidx.constraintlayout.helper.widget.Layer
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+
+    <item tag="android.support.constraint.utils.ImageFilterView"
+          title="ImageFilterView"
+          suggested="true"
+          icon="StudioIcons.LayoutEditor.Palette.IMAGE_VIEW">
+      <xml>
+        <![CDATA[
+            <android.support.constraint.utils.ImageFilterView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="androidx.constraintlayout.utils.widget.ImageFilterView"
+          title="ImageFilterView"
+          suggested="true"
+          icon="StudioIcons.LayoutEditor.Palette.IMAGE_VIEW">
+      <xml>
+        <![CDATA[
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+
+    <item tag="android.support.constraint.utils.ImageFilterButton"
+          title="ImageFilterButton"
+          suggested="true"
+          icon="StudioIcons.LayoutEditor.Palette.IMAGE_BUTTON">
+      <xml>
+        <![CDATA[
+            <android.support.constraint.utils.ImageFilterButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="androidx.constraintlayout.utils.widget.ImageFilterButton"
+          title="ImageFilterButton"
+          suggested="true"
+          icon="StudioIcons.LayoutEditor.Palette.IMAGE_BUTTON">
+      <xml>
+        <![CDATA[
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+
+    <item tag="android.support.constraint.utils.MockView"
+          title="MockView"
+          suggested="true"
+          icon="StudioIcons.LayoutEditor.Palette.PLACEHOLDER">
+      <xml>
+        <![CDATA[
+            <android.support.constraint.utils.MockView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+    <item tag="androidx.constraintlayout.utils.widget.MockView"
+          title="MockView"
+          suggested="true"
+          icon="StudioIcons.LayoutEditor.Palette.PLACEHOLDER">
+      <xml>
+        <![CDATA[
+            <androidx.constraintlayout.utils.widget.MockView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          ]]>
+      </xml>
+    </item>
+  </group>
+  <group name="Google">
+    <item tag="com.google.android.gms.ads.AdView" suggested="true"/>
+    <item tag="com.google.android.gms.maps.MapView" suggested="true"/>
+  </group>
+  <group name="Legacy">
+    <item tag="android.support.v7.widget.GridLayout" materialReference="https://material.io/guidelines/components/grid-lists.html"/>
+    <item tag="androidx.gridlayout.widget.GridLayout" materialReference="https://material.io/guidelines/components/grid-lists.html"/>
+    <item tag="ListView"/>
+    <item tag="TabHost"/>
+    <item tag="RelativeLayout"/>
+    <item tag="GridView"/>
+  </group>
+</palette>

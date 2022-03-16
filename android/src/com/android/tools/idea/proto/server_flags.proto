@@ -1,0 +1,38 @@
+syntax = "proto2";
+
+import "google/protobuf/any.proto";
+
+option java_package = "com.android.tools.idea";
+option java_multiple_files = true;
+
+// ServerFlag is a property used to configure a specific feature
+// at the client
+// percentEnabled: A number from 1-100 indicating what percent of users
+//   will have this flag enabled.
+// values: The specific value used by this feature. Can be one of the standard
+//   primitive types or a custom value.
+message ServerFlag {
+  optional int32 percent_enabled = 1;
+  oneof values {
+    int32 int_value = 2;
+    float float_value = 3;
+    string string_value = 4;
+    bool boolean_value = 5;
+    google.protobuf.Any proto_value = 6;
+  }
+}
+
+// ServerFlagData associates a unique name with a server flag
+// The name is used to retrieve the flag on the client side
+message ServerFlagData {
+  optional string name = 1;
+  optional ServerFlag server_flag = 2;
+}
+
+// ServerFlagList is a collection of ServerFlagData objects.
+// configuration_version indicates the CL used for the configuration files
+// that generated this list.
+message ServerFlagList {
+  optional int64 configuration_version = 1;
+  repeated ServerFlagData server_flags = 2;
+}

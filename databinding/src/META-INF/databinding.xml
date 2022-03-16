@@ -1,0 +1,52 @@
+<!--
+  ~ Copyright (C) 2018 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<idea-plugin>
+  <extensions defaultExtensionNs="com.intellij">
+    <customUsageSearcher implementation="com.android.tools.idea.databinding.findusages.DataBindingResourceUsageSearcher"/>
+    <java.shortNamesCache implementation="com.android.tools.idea.databinding.cache.BrShortNamesCache"/>
+    <java.shortNamesCache implementation="com.android.tools.idea.databinding.cache.LayoutBindingShortNamesCache"/>
+    <java.shortNamesCache implementation="com.android.tools.idea.databinding.cache.DataBindingComponentShortNamesCache"/>
+    <resolveScopeEnlarger implementation="com.android.tools.idea.databinding.finders.BindingScopeEnlarger" />
+    <java.elementFinder implementation="com.android.tools.idea.databinding.finders.BrClassFinder" id="dataBinding.BrClassFinder" order="first, before java"/>
+    <java.elementFinder implementation="com.android.tools.idea.databinding.finders.BindingClassFinder" id="dataBinding.BindingClassFinder" order="first, before java"/>
+    <java.elementFinder implementation="com.android.tools.idea.databinding.finders.DataBindingComponentClassFinder" id="dataBinding.ComponentClassFinder" order="first, before java"/>
+    <java.elementFinder implementation="com.android.tools.idea.databinding.finders.LayoutBindingPackageFinder" id="dataBinding.DataBindingPackageFinder" order="last, after java"/>
+    <applicationService serviceImplementation="com.android.tools.idea.databinding.DataBindingModeTrackingService" />
+    <applicationService serviceImplementation="com.android.tools.idea.databinding.ViewBindingEnabledTrackingService" />
+    <automaticRenamerFactory implementation="com.android.tools.idea.databinding.renamer.DataBindingRenamerFactory"/>
+    <moduleService serviceImplementation="com.android.tools.idea.databinding.module.LayoutBindingModuleCache" />
+    <xml.elementDescriptorProvider implementation="com.android.tools.idea.databinding.xml.DataBindingDomElementDescriptorProvider" order="first"/>
+    <refactoring.safeDeleteProcessor implementation="com.android.tools.idea.databinding.safedelete.LayoutBindingSafeDeleteProcessor" order="before android_resource_file"/>
+
+    <projectService serviceInterface="com.android.tools.idea.databinding.analytics.api.DataBindingTracker"
+                    serviceImplementation="com.android.tools.idea.databinding.analytics.LayoutBindingTracker"
+                    overrides="true"/>
+
+    <annotator language="kotlin" implementationClass="com.android.tools.idea.databinding.validation.DataBindingKotlinAnnotator" />
+    <intentionAction>
+      <className>com.android.tools.idea.databinding.actions.ConvertLayoutToDataBindingAction</className>
+      <category>Android</category>
+    </intentionAction>
+  </extensions>
+
+  <extensions defaultExtensionNs="org.jetbrains.kotlin">
+    <resolveScopeEnlarger implementation="com.android.tools.idea.databinding.finders.BindingKotlinScopeEnlarger" />
+  </extensions>
+
+  <extensions defaultExtensionNs="com.android.tools.idea">
+    <databinding.layoutBindingSupport implementation="com.android.tools.idea.databinding.LayoutBindingSupportImpl"/>
+  </extensions>
+</idea-plugin>

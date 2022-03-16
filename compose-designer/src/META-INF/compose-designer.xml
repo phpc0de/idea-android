@@ -1,0 +1,132 @@
+<!--
+  ~ Copyright (C) 2019 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<idea-plugin>
+  <extensionPoints>
+    <!--
+    Extension point for EditorNotification$Provider that generate notification that will be displayed in the PreviewEditor
+    (as opposed to spanning the whole width of the FileEditor.
+    A notification provider that wants this behaviour should extend this point and not the regular editorNotificationProvider.
+    -->
+    <extensionPoint qualifiedName="com.android.tools.idea.compose.preview.composeEditorNotificationProvider"
+                    interface="com.intellij.ui.EditorNotifications$Provider" />
+  </extensionPoints>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <lang.documentationProvider language="kotlin" implementationClass="com.android.tools.idea.compose.documentation.ComposeDocumentationProvider" order="first"/>
+
+    <editorNotificationProvider implementation="com.android.tools.idea.compose.preview.ComposeNewPreviewNotificationProvider" />
+
+    <localInspection implementationClass="com.android.tools.idea.compose.preview.PreviewAnnotationInFunctionWithParametersInspection"
+                     bundle="messages.ComposePreviewBundle"
+                     language="kotlin"
+                     enabledByDefault="true"
+                     groupKey="inspection.group.name"
+                     key="inspection.no.parameters.name"
+                     level="ERROR"/>
+
+    <localInspection implementationClass="com.android.tools.idea.compose.preview.PreviewNeedsComposableAnnotationInspection"
+                     bundle="messages.ComposePreviewBundle"
+                     language="kotlin"
+                     enabledByDefault="true"
+                     groupKey="inspection.group.name"
+                     key="inspection.no.composable.name"
+                     level="ERROR"/>
+
+    <localInspection implementationClass="com.android.tools.idea.compose.preview.PreviewMustBeTopLevelFunction"
+                     bundle="messages.ComposePreviewBundle"
+                     language="kotlin"
+                     enabledByDefault="true"
+                     groupKey="inspection.group.name"
+                     key="inspection.top.level.function"
+                     level="ERROR"/>
+
+    <localInspection implementationClass="com.android.tools.idea.compose.preview.PreviewDimensionRespectsLimit"
+                     bundle="messages.ComposePreviewBundle"
+                     language="kotlin"
+                     enabledByDefault="true"
+                     groupKey="inspection.group.name"
+                     key="inspection.dimension.limit.name"
+                     level="WARNING"/>
+
+    <localInspection implementationClass="com.android.tools.idea.compose.preview.PreviewMultipleParameterProvidersInspection"
+                     bundle="messages.ComposePreviewBundle"
+                     language="kotlin"
+                     enabledByDefault="true"
+                     groupKey="inspection.group.name"
+                     key="inspection.no.multiple.preview.provider.description"
+                     level="ERROR"/>
+
+    <localInspection implementationClass="com.android.tools.idea.compose.preview.animation.UpdateTransitionLabelInspection"
+                     language="kotlin"
+                     enabledByDefault="true"
+                     bundle="messages.ComposePreviewBundle"
+                     groupKey="inspection.group.name"
+                     key="inspection.update.transition.no.label.parameter.set.name"
+                     level="WARNING"/>
+
+    <localInspection implementationClass="com.android.tools.idea.compose.preview.animation.TransitionPropertiesLabelInspection"
+                     language="kotlin"
+                     enabledByDefault="true"
+                     bundle="messages.ComposePreviewBundle"
+                     groupKey="inspection.group.name"
+                     key="inspection.transition.properties.no.label.parameter.set.name"
+                     level="WARNING"/>
+
+    <deadCode implementation="com.android.tools.idea.compose.preview.PreviewEntryPoint" />
+
+    <postStartupActivity implementation="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationStartupActivity" />
+    <configurationType implementation="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationType"/>
+    <runConfigurationProducer
+        implementation="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationProducer"/>
+    <runLineMarkerContributor
+        language="kotlin"
+        implementationClass="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunLineMarkerContributor"/>
+    <codeInsight.lineMarkerProvider
+        language="kotlin"
+        implementationClass="com.android.tools.idea.compose.annotator.ComposePreviewPickerAnnotator"/>
+
+    <notificationGroup id="Compose Preview Notification" displayType="NONE"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="com.android.tools.idea.compose.preview">
+    <composeEditorNotificationProvider implementation="com.android.tools.idea.compose.preview.ComposePreviewNotificationProvider" />
+  </extensions>
+
+  <extensions defaultExtensionNs="com.android.tools.idea.uibuilder.editor.multirepresentation.sourcecode">
+    <sourceCodePreviewRepresentationProvider implementation="com.android.tools.idea.compose.preview.ComposePreviewRepresentationProvider"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="com.android.tools.idea.uibuilder.handlers">
+    <viewHandlerProvider implementation="com.android.tools.idea.compose.preview.uibuilder.handler.ComposeViewHandlerProvider" />
+  </extensions>
+
+  <project-components>
+    <component>
+      <implementation-class>com.android.tools.idea.compose.preview.ComposeNewPreviewNotificationManager</implementation-class>
+    </component>
+  </project-components>
+
+  <actions>
+    <action id="Android.Designer.ComposeIssueNotificationAction"
+            icon="StudioIcons.Common.ERROR"
+            class="com.android.tools.idea.compose.preview.actions.ComposeIssueNotificationAction"
+            text="Toggle Issue Panel"
+            description="Toggle the visibility of Issue Panel"
+            use-shortcut-of="Android.Designer.IssueNotificationAction" />
+  </actions>
+
+</idea-plugin>

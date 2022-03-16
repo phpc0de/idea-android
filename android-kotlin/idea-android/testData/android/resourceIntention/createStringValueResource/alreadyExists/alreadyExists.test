@@ -1,0 +1,6 @@
+{
+  "isApplicable": false,
+  "rFile": "../../R.kt",
+  "resDirectory": "../../res",
+  "intentionText": "Create string value resource 'app_name'"
+}

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/testResources">
+      <sourceFolder url="file://$MODULE_DIR$/testResources" type="java-test-resource" />
+    </content>
+    <content url="file://$MODULE_DIR$/testSrc">
+      <sourceFolder url="file://$MODULE_DIR$/testSrc" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="studio-proto" level="project" />
+    <orderEntry type="module" module-name="intellij.platform.lang.impl" scope="TEST" />
+    <orderEntry type="library" name="StreamEx" level="project" />
+    <orderEntry type="module" module-name="intellij.platform.testFramework" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="kotlin-test" level="project" />
+    <orderEntry type="library" scope="TEST" name="kotlin-reflect" level="project" />
+    <orderEntry type="module" module-name="intellij.android.core" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.spellchecker" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.xml.psi" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.adt.ui" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.adt.ui.model" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="easymock" level="project" />
+    <orderEntry type="library" scope="TEST" name="mockito" level="project" />
+    <orderEntry type="library" scope="TEST" name="truth" level="project" />
+    <orderEntry type="module" module-name="intellij.java.testFramework" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="Trove4j" level="project" />
+    <orderEntry type="module" module-name="intellij.xml.dom.impl" scope="TEST" />
+    <orderEntry type="module" module-name="android.sdktools.testutils" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.platform.externalSystem.impl" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.observable" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.java.compiler" scope="TEST" />
+    <orderEntry type="module" module-name="android.sdktools.common" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.gradle.toolingExtension" scope="TEST" />
+    <orderEntry type="module" module-name="android.sdktools.manifest-merger" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="Eclipse" level="project" />
+    <orderEntry type="module" module-name="intellij.xml.psi.impl" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.xml.impl" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.gradle" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.gradle.tests" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.groovy.psi" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.layoutlib-loader" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.properties.psi" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.platform.diff.impl" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="dexlib2" level="project" />
+    <orderEntry type="module" module-name="intellij.java.compiler.impl" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.junit" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.java.execution.impl" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.testFramework" scope="TEST" />
+    <orderEntry type="module" module-name="android.sdktools.analytics-shared" scope="TEST" />
+    <orderEntry type="module" module-name="android.sdktools.analytics-testing" scope="TEST" />
+    <orderEntry type="module" module-name="android.sdktools.analytics-tracker" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.wizard" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.wizard.model" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="guava-testlib" level="project" />
+    <orderEntry type="module" module-name="android.sdktools.fakeadbserver" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.sdkUpdates" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.gradle-tooling.api" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="equalsverifier" level="project" />
+    <orderEntry type="module" module-name="android.sdktools.analyzer" scope="TEST" />
+    <orderEntry type="module" module-name="android.sdktools.sdk-common" scope="TEST" />
+    <orderEntry type="module" module-name="android.sdktools.flags" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.properties.psi.impl" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.artwork" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.common" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.platform.images" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.apkanalyzer" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="sqlite" level="project" />
+    <orderEntry type="module" module-name="intellij.android.projectSystem" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.adb" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.projectSystem.gradle" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.adt.testutils" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.platform.jps.build" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.platform.credentialStore.ui" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.lang" scope="TEST" />
+    <orderEntry type="module-library">
+      <library name="instantapps-api">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/instantapps-api-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="android.sdktools.analytics-crash" scope="TEST" />
+    <orderEntry type="library" name="commons-io" level="project" />
+    <orderEntry type="library" name="aapt-proto" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/pepk.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="emulator-proto" level="project" />
+    <orderEntry type="library" name="protobuf" level="project" />
+    <orderEntry type="library" name="studio-analytics-proto" level="project" />
+    <orderEntry type="library" scope="TEST" name="jimfs" level="project" />
+    <orderEntry type="module" module-name="intellij.android.kotlin.extensions" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.kotlin.idea" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.kotlin.output.parser" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.deploy" scope="TEST" />
+    <orderEntry type="module" module-name="android.sdktools.perf-logger" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.databinding" scope="RUNTIME" />
+    <orderEntry type="module" module-name="intellij.android.resources-base" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="NanoXML" level="project" />
+    <orderEntry type="module" module-name="intellij.platform.objectSerializer" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.app-inspection.inspectors.database" />
+    <orderEntry type="module" module-name="android.sdktools.wizardTemplate.plugin" scope="TEST" />
+    <orderEntry type="module" module-name="android.sdktools.wizardTemplate.impl" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.lint" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.gradle.dsl" />
+    <orderEntry type="module" module-name="intellij.android.projectSystem.gradle.psd" />
+    <orderEntry type="module" module-name="android.sdktools.builder-model" />
+    <orderEntry type="module-library">
+      <library name="androidx-test-core-proto" type="repository">
+        <properties maven-id="com.google.testing.platform:core-proto:0.0.8-alpha04" />
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/com/google/testing/platform/core-proto/0.0.8-alpha04/core-proto-0.0.8-alpha04.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="android-test-plugin-host-device-info-proto" level="project" />
+    <orderEntry type="module-library">
+      <library name="libandroid-core-proto" type="repository">
+        <properties include-transitive-deps="false" maven-id="org.jetbrains.intellij.deps.android.tools.base:libandroid-core-proto:27.3.0.0" />
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/intellij/deps/android/tools/base/libandroid-core-proto/27.3.0.0/libandroid-core-proto-27.3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="jaxb-api" level="project" />
+    <orderEntry type="module" module-name="intellij.webp" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="ini4j" level="project" />
+    <orderEntry type="module" module-name="intellij.android.gradle-tooling.impl" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.platform.core.ui" />
+    <orderEntry type="module" module-name="intellij.platform.ide.util.io" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="Velocity" level="project" />
+    <orderEntry type="library" name="ASM" level="project" />
+    <orderEntry type="library" name="CGLIB" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library name="libandroid-core-proto-test" type="repository">
+        <properties include-transitive-deps="false" maven-id="org.jetbrains.intellij.deps.android.tools.base:libandroid-core-proto-test:27.3.0.0" />
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/intellij/deps/android/tools/base/libandroid-core-proto-test/27.3.0.0/libandroid-core-proto-test-27.3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="intellij.android.server-flags" />
+    <orderEntry type="module-library">
+      <library name="libstudio.android-test-plugin-host-retention-proto" type="repository">
+        <properties include-transitive-deps="false" maven-id="org.jetbrains.intellij.deps.android.tools.base:libstudio.android-test-plugin-host-retention-proto:27.3.0.0" />
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/intellij/deps/android/tools/base/libstudio.android-test-plugin-host-retention-proto/27.3.0.0/libstudio.android-test-plugin-host-retention-proto-27.3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="intellij.android.projectSystem.gradle.models" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.projectSystem.gradle.repositorySearch" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.projectSystem.gradle.sync" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.utp" scope="TEST" />
+    <orderEntry type="module" module-name="intellij.android.compose-common" scope="TEST" />
+    <orderEntry type="library" name="Guava" level="project" />
+    <orderEntry type="library" name="kotlinx-coroutines-jdk8" level="project" />
+    <orderEntry type="module" module-name="kotlin.core" />
+    <orderEntry type="module" module-name="intellij.gradle.common" />
+    <orderEntry type="library" name="kotlinc.kotlin-compiler" level="project" />
+    <orderEntry type="module" module-name="kotlin.gradle.gradle-tooling" />
+    <orderEntry type="module" module-name="kotlin.fir.frontend-independent" />
+    <orderEntry type="library" name="gson" level="project" />
+    <orderEntry type="module" module-name="kotlin.idea" scope="TEST" />
+    <orderEntry type="module" module-name="kotlin.common" scope="TEST" />
+    <orderEntry type="library" name="http-client" level="project" />
+    <orderEntry type="library" name="javaslang" level="project" />
+  </component>
+</module>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="android.view.animation.Animation int getBackgroundColor()">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.view.animation.Animation void setBackgroundColor(int) 0">
+    <annotation name="android.support.annotation.ColorInt" />
+  </item>
+  <item name="android.view.animation.Animation void setInterpolator(android.content.Context, int) 1">
+    <annotation name="android.support.annotation.AnimRes" />
+    <annotation name="android.support.annotation.InterpolatorRes" />
+  </item>
+  <item name="android.view.animation.AnimationUtils android.view.animation.Animation loadAnimation(android.content.Context, int) 1">
+    <annotation name="android.support.annotation.AnimRes" />
+  </item>
+  <item name="android.view.animation.AnimationUtils android.view.animation.Interpolator loadInterpolator(android.content.Context, int) 1">
+    <annotation name="android.support.annotation.AnimRes" />
+    <annotation name="android.support.annotation.InterpolatorRes" />
+  </item>
+  <item name="android.view.animation.AnimationUtils android.view.animation.LayoutAnimationController loadLayoutAnimation(android.content.Context, int) 1">
+    <annotation name="android.support.annotation.AnimRes" />
+  </item>
+  <item name="android.view.animation.LayoutAnimationController void setAnimation(android.content.Context, int) 1">
+    <annotation name="android.support.annotation.AnimRes" />
+  </item>
+  <item name="android.view.animation.LayoutAnimationController void setInterpolator(android.content.Context, int) 1">
+    <annotation name="android.support.annotation.InterpolatorRes" />
+  </item>
+  <item name="android.view.animation.Transformation void setAlpha(float) 0">
+    <annotation name="android.support.annotation.FloatRange">
+      <val name="from" val="0.0" />
+      <val name="to" val="1.0" />
+    </annotation>
+  </item>
+</root>
+

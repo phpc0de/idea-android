@@ -1,0 +1,64 @@
+<!--
+  ~ Copyright (C) 2016 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project name="android" xmlns:unless="ant:unless">
+    <dirname property="workspace" file="${ant.file.android}/../../../.."/>
+    <condition property="gradle.wrapper.executable" value="${workspace}/tools/gradlew.bat" else="${workspace}/tools/gradlew">
+        <os family="windows" />
+    </condition>
+    <condition property="bazel" value="${workspace}/tools/base/bazel/bazel.cmd" else="${workspace}/tools/base/bazel/bazel">
+        <os family="windows" />
+    </condition>
+    <condition property="bazel_config" value="--config=${config}" else="">
+        <isset property="config"/>
+    </condition>
+
+    <target name="preBuild" depends="bazel-dependencies, android-plugin">
+    </target>
+
+    <target name="bazel-dependencies" unless="${skip.bazel.dependencies}">
+        <exec executable="${bazel}" dir="${workspace}" failonerror="true">
+            <arg value="build" />
+            <arg value="//tools/adt/idea/android:artifacts" />
+            <arg value="${bazel_config}" unless:blank="${bazel_config}"/>
+        </exec>
+        <exec executable="${bazel}" dir="${workspace}" failonerror="true">
+            <arg value="build" />
+            <arg value="@blaze//third_party/intellij/bazel/plugin/proto:proto_deps" />
+            <arg value="${bazel_config}" unless:blank="${bazel_config}"/>
+        </exec>
+    </target>
+
+    <condition property="build.gradle.plugin">
+        <or>
+            <isset property="bundle.gradle.plugin" />
+            <isset property="bundle.gradle.release.plugin" />
+        </or>
+    </condition>
+    <target name="android-plugin" if="${build.gradle.plugin}">
+        <condition property="select.release.args" value="-init-script ${workspace}/tools/buildSrc/base/release.gradle" else="">
+            <isset property="bundle.gradle.release.plugin" />
+        </condition>
+        <exec executable="${gradle.wrapper.executable}" dir="${workspace}/tools" failonerror="true">
+            <env key="JAVA_HOME" value="${java.home}" />
+            <arg line="--no-daemon" />
+            <arg line="-Dorg.gradle.parallel=false" />  <!-- youtrack.jetbrains.com/issue/KT-15562 -->
+            <arg line="${select.release.args}" />
+            <arg value="zipOfflineRepo" />
+        </exec>
+        <unzip src="${workspace}/out/dist/offline_repo.zip" dest="${workspace}/out/studio/repo" />
+    </target>
+</project>

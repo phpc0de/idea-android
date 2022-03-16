@@ -1,0 +1,2 @@
+include(":gradleModelTest")
+include(":lib")

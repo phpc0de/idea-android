@@ -1,0 +1,26 @@
+android {
+  buildTypes {
+    xyz {
+      applicationIdSuffix = "mySuffix"
+      consumerProguardFiles = ['proguard-android.txt', 'proguard-rules.pro']
+      crunchPngs = true
+      debuggable = true
+      isDefault = true
+      embedMicroApp = true
+      jniDebuggable = true
+      manifestPlaceholders = [activityLabel1: "defaultName1", activityLabel2: "defaultName2"]
+      minifyEnabled = true
+      multiDexEnabled = true
+      proguardFiles = ['proguard-android.txt', 'proguard-rules.pro']
+      pseudoLocalesEnabled = true
+      renderscriptDebuggable = true
+      renderscriptOptimLevel = 1
+      shrinkResources = true
+      testCoverageEnabled = true
+      useJack = true
+      useProguard = true
+      versionNameSuffix = "abc"
+      zipAlignEnabled = true
+    }
+  }
+}

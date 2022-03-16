@@ -1,0 +1,34 @@
+<!--
+  ~ Copyright (C) 2018 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<idea-plugin>
+  <depends>org.intellij.intelliLang</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <completion.contributor implementationClass="com.android.tools.idea.lang.databinding.completion.DataBindingCompletionContributor" language="AndroidDataBinding"/>
+    <fileType name="AndroidDataBinding" language="AndroidDataBinding" implementationClass="com.android.tools.idea.lang.databinding.config.DbFileType" extensions="android_data_binding" fieldName="INSTANCE"/>
+    <lang.braceMatcher language="AndroidDataBinding" implementationClass="com.android.tools.idea.lang.databinding.highlight.DbPairedBraceMatcher"/>
+    <lang.parserDefinition language="AndroidDataBinding" implementationClass="com.android.tools.idea.lang.databinding.config.DbParserDefinition"/>
+    <lang.syntaxHighlighter language="AndroidDataBinding" implementationClass="com.android.tools.idea.lang.databinding.highlight.DbSyntaxHighlighter" />
+    <languageInjector implementation="com.android.tools.idea.lang.databinding.config.DbLanguageInjector"/>
+    <psi.referenceContributor implementation="com.android.tools.idea.lang.databinding.reference.DataBindingExprReferenceContributor"/>
+    <psi.referenceContributor language="XML" implementation="com.android.tools.idea.lang.databinding.reference.DataBindingXmlAttributeReferenceContributor"/>
+    <lang.foldingBuilder language="XML" implementationClass="com.android.tools.idea.lang.databinding.folding.DataBindingFoldingBuilder"/>
+    <annotator language="AndroidDataBinding" implementationClass="com.android.tools.idea.lang.databinding.validation.DataBindingExpressionAnnotator"/>
+  </extensions>
+  <extensions defaultExtensionNs="com.android.tools.idea.lang.databinding">
+    <dataBindingCompletionSupport implementation="com.android.tools.idea.lang.databinding.completion.DataBindingCompletionSupportImpl"/>
+    <dataBindingExpressionSupport implementation="com.android.tools.idea.lang.databinding.parse.DataBindingExpressionSupportImpl"/>
+  </extensions>
+</idea-plugin>

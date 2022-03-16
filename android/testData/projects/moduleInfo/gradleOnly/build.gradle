@@ -1,0 +1,26 @@
+buildscript {
+  repositories {
+    // This will be populated by AndroidGradleTestCase
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:0.12.+'
+  }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+  // This will be populated by AndroidGradleTestCase
+}
+
+android {
+  compileSdkVersion 18
+  buildToolsVersion "19.1.0"
+
+  namespace = "com.test.app"
+
+  defaultConfig {
+    minSdkVersion 17
+    targetSdkVersion 17
+    applicationId "from.gradle"
+  }
+}

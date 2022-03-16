@@ -1,0 +1,42 @@
+<!--
+  ~ Copyright (C) 2019 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<idea-plugin>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <moduleService serviceImplementation="com.android.tools.idea.mlkit.MlModuleService"/>
+    <fileTypeFactory implementation="com.android.tools.idea.mlkit.viewer.MlModelFileTypeFactory"/>
+    <fileEditorProvider implementation="com.android.tools.idea.mlkit.viewer.TfliteModelFileEditorProvider"/>
+    <fileBasedIndex implementation="com.android.tools.idea.mlkit.MlModelFileIndex"/>
+    <java.shortNamesCache implementation="com.android.tools.idea.mlkit.MlShortNamesCache"/>
+    <java.elementFinder implementation="com.android.tools.idea.mlkit.MlClassFinder" id="mlkit.MlClassFinder"
+                        order="first, before java"/>
+    <resolveScopeEnlarger implementation="com.android.tools.idea.mlkit.MlResolveScopeEnlarger"/>
+    <editorNotificationProvider implementation="com.android.tools.idea.mlkit.notifications.MissingDependenciesNotificationProvider"/>
+    <editorNotificationProvider implementation="com.android.tools.idea.mlkit.notifications.InNonMlFolderNotificationProvider"/>
+    <editorNotificationProvider implementation="com.android.tools.idea.mlkit.notifications.BuildFeatureOffNotificationProvider"/>
+    <editorNotificationProvider implementation="com.android.tools.idea.mlkit.notifications.DependenciesTooLowNotificationProvider"/>
+    <editorNotificationProvider implementation="com.android.tools.idea.mlkit.notifications.LowAgpVersionNotificationProvider"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="org.jetbrains.kotlin">
+    <resolveScopeEnlarger implementation="com.android.tools.idea.mlkit.MlResolveScopeEnlarger$MlKotlinResolveScopeEnlarger"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="com.android.tools.idea.templates">
+    <additionalTemplateActionsProvider implementation="com.android.tools.idea.mlkit.importmodel.ImportMlModelActionsProvider"/>
+  </extensions>
+
+</idea-plugin>

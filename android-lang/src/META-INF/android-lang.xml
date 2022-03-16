@@ -1,0 +1,202 @@
+<!--
+  ~ Copyright (C) 2017 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<idea-plugin>
+
+  <depends>org.intellij.intelliLang</depends>
+
+  <extensionPoints>
+    <extensionPoint qualifiedName="com.android.tools.idea.lang.androidSql.contextProvider"
+                    interface="com.android.tools.idea.lang.androidSql.AndroidSqlContext$Provider"/>
+  </extensionPoints>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Android IDL support -->
+    <fileType name="AIDL"
+              implementationClass="com.android.tools.idea.lang.aidl.AidlFileType"
+              fieldName="INSTANCE"
+              language="AIDL"
+              extensions="aidl"/>
+    <lang.parserDefinition language="AIDL" implementationClass="com.android.tools.idea.lang.aidl.AidlParserDefinition"/>
+    <lang.syntaxHighlighter language="AIDL"
+                            implementationClass="com.android.tools.idea.lang.aidl.highlight.AidlSyntaxHighlighter"/>
+    <annotator language="AIDL" implementationClass="com.android.tools.idea.lang.aidl.highlight.AidlClassNameAnnotator" order="first"/>
+    <lang.commenter language="AIDL" implementationClass="com.intellij.lang.java.JavaCommenter"/>
+    <lang.findUsagesProvider language="AIDL" implementationClass="com.android.tools.idea.lang.aidl.findUsages.AidlFindUsageProvider"/>
+    <findUsagesHandlerFactory implementation="com.android.tools.idea.lang.aidl.findUsages.AidlFindUsageHandlerFactory"/>
+
+    <!-- Proguard support -->
+    <fileType name="Shrinker Config File"
+              implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8FileType"
+              fieldName="INSTANCE"
+              language="SHRINKER_CONFIG"
+              extensions="pro"
+              fileNames="proguard.cfg"
+              patterns="proguard-*.txt"/>
+
+    <lang.parserDefinition language="SHRINKER_CONFIG"
+                           implementationClass="com.android.tools.idea.lang.proguardR8.parser.ProguardR8ParserDefinition"/>
+    <lang.syntaxHighlighterFactory language="SHRINKER_CONFIG"
+                                   implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8SyntaxHighlighterFactory"/>
+    <completion.contributor language="SHRINKER_CONFIG"
+                            implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8CompletionContributor"
+                            order="before javaClassReference"
+    />
+    <idIndexer filetype="Shrinker Config File" implementationClass="com.android.tools.idea.lang.proguardR8.psi.ProguardR8IdIndexer"/>
+    <annotator language="SHRINKER_CONFIG" implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8Annotator"/>
+    <lang.braceMatcher language="SHRINKER_CONFIG"
+                       implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8PairedBraceMatcher"/>
+    <lang.quoteHandler language="SHRINKER_CONFIG" implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8QuoteHandler"/>
+    <lang.commenter language="SHRINKER_CONFIG" implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8Commenter"/>
+    <lang.findUsagesProvider language="SHRINKER_CONFIG"
+                             implementationClass="com.android.tools.idea.lang.proguardR8.psi.ProguardR8FindUsagesProvider"/>
+    <usageTypeProvider implementation="com.android.tools.idea.lang.proguardR8.psi.ProguardR8UsageTypeProvider"/>
+    <useScopeEnlarger implementation="com.android.tools.idea.lang.proguardR8.ProguardR8UseScopeEnlarger"/>
+    <typedHandler implementation="com.android.tools.idea.lang.proguardR8.ProguardR8TypedHandler" id="proguardR8CompletionAutoPopup"/>
+    <lang.elementManipulator forClass="com.android.tools.idea.lang.proguardR8.psi.ProguardR8QualifiedName"
+                             implementationClass="com.android.tools.idea.lang.proguardR8.psi.ProguardR8QualifiedNameManipulator"/>
+    <lang.elementManipulator forClass="com.android.tools.idea.lang.proguardR8.psi.ProguardR8ClassMemberName"
+                             implementationClass="com.android.tools.idea.lang.proguardR8.psi.ProguardR8ClassMemberNameManipulator"/>
+
+    <!-- This inspection uses the same highlight as "unused symbol", so the level is only visible in the gutter.   -->
+    <localInspection groupPath="Android"
+                     groupName="Shrinker"
+                     language="SHRINKER_CONFIG"
+                     enabledByDefault="true"
+                     level="ERROR"
+                     shortName="ShrinkerUnresolvedReference"
+                     implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8ReferenceInspection"
+                     displayName="Unresolved reference in Shrinker Config file"/>
+
+    <localInspection groupPath="Android"
+                     groupName="Shrinker"
+                     language="SHRINKER_CONFIG"
+                     enabledByDefault="true"
+                     level="WARNING"
+                     shortName="R8IgnoredFlags"
+                     implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8IgnoredFlagInspection"
+                     displayName="Flags ignored by R8"/>
+
+    <localInspection groupPath="Android"
+                     groupName="Shrinker"
+                     language="SHRINKER_CONFIG"
+                     enabledByDefault="true"
+                     level="ERROR"
+                     shortName="ShrinkerInvalidFlags"
+                     implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8InvalidFlagInspection"
+                     displayName="Invalid flag in shrinker config"/>
+
+    <localInspection groupPath="Android"
+                     groupName="Shrinker"
+                     language="SHRINKER_CONFIG"
+                     enabledByDefault="true"
+                     level="ERROR"
+                     shortName="ShrinkerArrayType"
+                     implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8ArrayTypeInspection"
+                     displayName="Invalid using of array type"/>
+
+    <localInspection groupPath="Android"
+                     groupName="Shrinker"
+                     language="SHRINKER_CONFIG"
+                     enabledByDefault="true"
+                     level="ERROR"
+                     shortName="ShrinkerInnerClassSeparator"
+                     implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8InnerClassSeparatorInspection"
+                     displayName="Invalid separator between class and inner class"/>
+
+    <lang.foldingBuilder language="SHRINKER_CONFIG" implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8CustomFoldingBuilder"/>
+
+    <lang.inspectionSuppressor
+        language="SHRINKER_CONFIG"
+        implementationClass="com.android.tools.idea.lang.proguardR8.ProguardR8InspectionSuppressor"/>
+
+    <!-- Renderscript -->
+    <fileType name="Android RenderScript"
+              implementationClass="com.android.tools.idea.lang.rs.AndroidRenderscriptFileType"
+              fieldName="INSTANCE"
+              language="Renderscript"
+              extensions="fs;rs;rsh" />
+    <lang.parserDefinition language="Renderscript"
+                           implementationClass="com.android.tools.idea.lang.rs.RenderscriptParserDefinition"/>
+    <lang.syntaxHighlighter language="Renderscript"
+                                   implementationClass="com.android.tools.idea.lang.rs.RenderscriptSyntaxHighlighter"/>
+
+
+
+    <!-- SQL support -->
+    <fileType name="Android Room SQL"
+              implementationClass="com.android.tools.idea.lang.androidSql.AndroidSqlFileType"
+              fieldName="INSTANCE"
+              language="RoomSql" />
+
+    <lang.parserDefinition language="RoomSql"
+                           implementationClass="com.android.tools.idea.lang.androidSql.parser.AndroidSqlParserDefinition"/>
+    <lang.syntaxHighlighterFactory language="RoomSql"
+                                   implementationClass="com.android.tools.idea.lang.androidSql.AndroidSqlSyntaxHighlighterFactory"/>
+    <lang.elementManipulator forClass="com.android.tools.idea.lang.androidSql.psi.impl.AndroidSqlDefinedTableNameImpl"
+                             implementationClass="com.android.tools.idea.lang.androidSql.refactoring.AndroidSqlNameElementManipulator"/>
+    <lang.elementManipulator forClass="com.android.tools.idea.lang.androidSql.psi.impl.AndroidSqlSelectedTableNameImpl"
+                             implementationClass="com.android.tools.idea.lang.androidSql.refactoring.AndroidSqlNameElementManipulator"/>
+    <lang.elementManipulator forClass="com.android.tools.idea.lang.androidSql.psi.impl.AndroidSqlColumnNameImpl"
+                             implementationClass="com.android.tools.idea.lang.androidSql.refactoring.AndroidSqlNameElementManipulator"/>
+    <lang.elementManipulator forClass="com.android.tools.idea.lang.androidSql.psi.impl.AndroidSqlBindParameterImpl"
+                             implementationClass="com.android.tools.idea.lang.androidSql.refactoring.AndroidSqlBindParameterManipulator"/>
+    <lang.findUsagesProvider language="RoomSql"
+                             implementationClass="com.android.tools.idea.lang.androidSql.refactoring.AndroidSqlFindUsagesProvider"/>
+    <idIndexer filetype="Android Room SQL" implementationClass="com.android.tools.idea.lang.androidSql.refactoring.AndroidSqlIdIndexer"/>
+    <usageTypeProvider implementation="com.android.tools.idea.lang.androidSql.refactoring.AndroidSqlUsageTypeProvider"/>
+
+    <localInspection groupPath="Android"
+                     groupName="Room"
+                     language="RoomSql"
+                     shortName="AndroidUnresolvedRoomSqlReference"
+                     enabledByDefault="true"
+                     level="ERROR"
+                     implementationClass="com.android.tools.idea.lang.androidSql.AndroidSqlUnresolvedReferenceInspection"
+                     displayName="Unresolved reference in Room SQL"/>
+
+    <lang.braceMatcher language="RoomSql" implementationClass="com.android.tools.idea.lang.androidSql.AndroidSqlPairedBraceMatcher"/>
+    <lang.quoteHandler language="RoomSql" implementationClass="com.android.tools.idea.lang.androidSql.AndroidSqlQuoteHandler"/>
+
+    <!--  Room support  -->
+    <useScopeEnlarger implementation="com.android.tools.idea.lang.androidSql.room.RoomUseScopeEnlarger"/>
+    <moduleService serviceImplementation="com.android.tools.idea.lang.androidSql.room.RoomSchemaManager"/>
+    <projectService serviceImplementation="com.android.tools.idea.lang.androidSql.room.RoomDependencyChecker"/>
+    <referencesSearch implementation="com.android.tools.idea.lang.androidSql.room.RoomReferenceSearchExecutor"/>
+    <vetoRenameCondition implementation="com.android.tools.idea.lang.androidSql.AndroidSqlRenameVetoCondition"/>
+    <localInspection groupPath="Android"
+                     groupName="Room"
+                     language="RoomSql"
+                     shortName="AndroidRoomQuestionMarkBindParameter"
+                     enabledByDefault="true"
+                     level="ERROR"
+                     implementationClass="com.android.tools.idea.lang.androidSql.room.RoomBindParameterSyntaxInspection"
+                     displayName="'?' used as parameter in a Room query."/>
+
+    <!-- Multidex keep files support -->
+    <fileType name="MultiDexKeep" implementationClass="com.android.tools.idea.lang.multiDexKeep.MultiDexKeepFileType"
+              fileNames="multidex-config.txt" language="MultiDexKeep" fieldName="INSTANCE"/>
+    <lang.parserDefinition language="MultiDexKeep" implementationClass="com.android.tools.idea.lang.multiDexKeep.MultiDexKeepParserDefinition"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="com.android.tools.idea.lang.androidSql">
+    <contextProvider implementation="com.android.tools.idea.lang.androidSql.room.RoomSqlContext$Provider" />
+  </extensions>
+
+  <extensions defaultExtensionNs="org.intellij.intelliLang">
+    <injectionConfig config="injections/roomSqlInjections.xml"/>
+  </extensions>
+
+</idea-plugin>

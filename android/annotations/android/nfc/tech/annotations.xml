@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="android.nfc.tech.IsoDep byte[] transceive(byte[])">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.NFC&quot;" />
+    </annotation>
+  </item>
+  <item name="android.nfc.tech.IsoDep int getTimeout()">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.NFC&quot;" />
+    </annotation>
+  </item>
+  <item name="android.nfc.tech.IsoDep void setTimeout(int)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.NFC&quot;" />
+    </annotation>
+  </item>
+  <item name="android.nfc.tech.Ndef android.nfc.NdefMessage getNdefMessage()">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.NFC&quot;" />
+    </annotation>
+  </item>
+  <item name="android.nfc.tech.Ndef boolean makeReadOnly()">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.NFC&quot;" />
+    </annotation>
+  </item>
+  <item name="android.nfc.tech.Ndef void writeNdefMessage(android.nfc.NdefMessage)">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.NFC&quot;" />
+    </annotation>
+  </item>
+  <item name="android.nfc.tech.TagTechnology void connect()">
+    <annotation name="android.support.annotation.RequiresPermission">
+      <val name="value" val="&quot;android.permission.NFC&quot;" />
+    </annotation>
+  </item>
+</root>
+

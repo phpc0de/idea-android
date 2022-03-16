@@ -1,0 +1,7 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.google.guava:guava:23.0'
+    api project(':javalib2')
+}

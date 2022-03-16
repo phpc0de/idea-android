@@ -1,0 +1,11 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.0"
+
+    defaultConfig {
+        <error descr="Use an integer rather than a string here (replace '7' with just 7)">minSdkVersion '7<caret>'</error>
+        <error descr="Use an integer rather than a string here (replace '17' with just 17)">targetSdkVersion '17'</error>
+    }
+}

@@ -1,0 +1,51 @@
+<!--
+  ~ Copyright (C) 2016 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<idea-plugin>
+  <extensions defaultExtensionNs="com.intellij">
+    <facet.toolWindow id="Android Profiler"
+                      facetIdList="android,apk"
+                      anchor="bottom"
+                      icon="StudioIcons.Shell.ToolWindows.ANDROID_PROFILER"
+                      factoryClass="com.android.tools.idea.profilers.AndroidProfilerToolWindowFactory"
+                      doNotActivateOnStart="true"/>
+    <projectService serviceImplementation="com.android.tools.idea.profilers.profilingconfig.CpuProfilingConfigService"/>
+    <applicationService serviceImplementation="com.android.tools.idea.profilers.AndroidProfilerService"/>
+  </extensions>
+  <actions>
+    <action id="Android.ChooseProfileConfiguration" class="com.android.tools.idea.profilers.ChooseProfileConfigurationPopupAction"
+            text="Profile..." description="Choose and profile configuration" icon="StudioIcons.Shell.Toolbar.PROFILER">
+      <add-to-group group-id="RunMenu" anchor="after" relative-to-action="ChooseDebugConfiguration" />
+    </action>
+  </actions>
+  <extensions defaultExtensionNs="com.android.run">
+    <androidLaunchTaskContributor implementation="com.android.tools.idea.profilers.AndroidProfilerLaunchTaskContributor" />
+  </extensions>
+  <extensions defaultExtensionNs="com.intellij">
+    <executor implementation="com.android.tools.idea.profilers.ProfileRunExecutor" />
+    <programRunner implementation="com.android.tools.idea.profilers.ProfilerProgramRunner" />
+    <fileEditorProvider implementation="com.android.tools.idea.profilers.capture.AndroidProfilerCaptureEditorProvider" />
+    <fileType name="AndroidProfilerCpuCapture" implementationClass="com.android.tools.idea.profilers.capture.CpuCaptureFileType"
+              extensions="trace"/>
+    <fileType name="AndroidProfilerMemoryAllocation" implementationClass="com.android.tools.idea.profilers.capture.MemoryAllocationFileType"
+              extensions="alloc"/>
+    <fileType name="AndroidProfilerMemoryCapture" implementationClass="com.android.tools.idea.profilers.capture.MemoryCaptureFileType"/>
+    <fileTypeDetector implementation="com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector"/>
+    <fileType name="HeapProfd" implementationClass="com.android.tools.idea.profilers.capture.HeapProfdMemoryCaptureFileType"
+              fieldName="INSTANCE" extensions="heapprofd"/>
+    <fileType name="PerfettoCapture" implementationClass="com.android.tools.idea.profilers.capture.PerfettoCaptureFileType"
+              extensions="pftrace;perfetto-trace"/>
+  </extensions>
+</idea-plugin>

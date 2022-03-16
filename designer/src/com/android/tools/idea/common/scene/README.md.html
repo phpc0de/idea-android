@@ -1,0 +1,103 @@
+<!--
+  ~ Copyright (C) 2018 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<!-- For better readability, Please open this file in the browser -->
+
+**Design Doc of Placeholder**
+
+*Last updated: Jan 17th 2019*
+
+Overview
+=====
+
+`Placeholder` is designed for drag-and-drop interaction in Layout Editor. It is a replacement of all `DragTarget`s.
+
+`Placeholder` describes the area for dropping mouse, how component snaps it, and the callback function when dropping the component on it.
+The callback function is used for setting the attributes after dropping the Widget.
+
+We also has `CommonDragTarget` which takes responsibilities to update component position and interact with
+`Placeholder`s.
+
+
+How It Works
+=====
+
+When user starts dragging a component, we create a `CommonDragTarget` which captures the mouse position and collect `Placeholder`s from
+`Scene`. `CommonDragTarget` snaps to the collected `Placeholder`s and updates the positions of the dragged component. Once the mouse is
+released, `CommonDragTarget` finds the chosen `Placeholder` and applies the callback of it to update the attributes.
+
+Implement a `Placeholder`
+=====
+
+For creating a new Placeholder, simply extends the `Placeholder` interface and custom the part you need.
+
+This interface contains 6 overridable functions:
+
+(optional) `val associatedComponent: SceneComponent = host`
+----
+When the mouse is hovered on a Placeholder, all other Placeholder which have the same container as hovered Placeholder would be
+highlighted.
+By default the associatedComponent is same as the host. One exception is the CoordinatorLayout, where anchor[1] Placeholders are created by
+CoordinatorLayout but their associatedComponent is the anchor. The reason why this exception exists is because when dragging a widget to an
+anchor Placeholder, the dragged component should be added to the CoordinatorLayout, but the user will interact with the anchor thus the
+visual effects should displayed at the anchor position.<br>
+(Note: Anchor is used to place floating views relative to other arbitrary content panes in Coordinator Layout.)
+
+(optional) `val isLiveUpdatable = false`
+---
+Determine if this Placeholder updates the attributes during dragging. The updated attributes are pending in the `AttributesTransaction`
+which is committed after mouse released.
+
+(optional) `val dominate = true`
+----
+Determine if this Placeholder is visual visible and has higher priority than other Placeholder which are in the same level but not visible.
+For example, all anchor Placeholder are dominate in Coordinator Layout. But the non-anchor Placeholder which add component to Coordinator
+Layout without anchor is not dominate.
+Non-dominated Placeholder can be treated as an background placeholder.
+
+`val region: Region`
+-----
+For describing the receivable area. `CommonDragTarget` renders this region as well.
+It also has `level` property, which is used to determine the priority when regions are overlap each other. The higher level has higher
+priority. For now all region is a rectangle.
+
+(optional) `fun findNextSibling(appliedComponent: SceneComponent, newParent: SceneComponent): SceneComponent?`
+-----
+If the dragged widget has to be inserted to specific position in Xml tree, return the next sibling of the inserted component.
+By default the component would keep the same position as before, or append to the end of file if it is a new Widget in such View Group.
+For example, LinearPlaceholder overrides this value since Linear Layout needs to change the order of its Widgets.
+
+`fun snap(info: SnappingInfo, retPoint: Point): Boolean`
+-----
+The arguments describe the expected area of dragged widget. `snap` function checks if the dragged widget should effect to this `Placeholder`
+
+(optional) `fun updateLiveAttribute(SceneComponent, AttributeHolder, Int, Int)`
+-----
+Callback for updating specified attributes when this `Placeholder` is applied during dragging.
+
+`fun updateAttributes(SceneComponent, AttributeHolder, AttributeHolder)`
+-----
+Callback for updating specified attributes when this `Placeholder` is applied after releasing the mouse.
+
+After having a custom `Placeholder`, override `getPlaceholders(SceneComponent)` function in associated `ViewHandler` to provide them.<br>
+The `CommonDragTarget` will collect and interact with them automatically.
+
+References
+=====
+
+[DesignDoc](https://docs.google.com/document/d/1HbxrqHMkdzjFAYhVJikp6bQVpBbaUsjmALtLpg-g_iw/edit?usp=sharing)
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js"></script><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>

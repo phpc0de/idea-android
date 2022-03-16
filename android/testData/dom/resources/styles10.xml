@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="Style1" parent="android:Theme">
+  </style>
+  <style name="Style2" parent="android:style/Theme">
+  </style>
+  <style name="Style3" parent="@android:style/Theme">
+  </style>
+  <style name="Style4" parent="<error descr="Cannot resolve symbol '@android:style/Them'">@android:style/Them</error>">
+  </style>
+  <style name="Style5" parent="android:Theme.Holo.Light">
+  </style>
+  <style name="Style6" parent="<error descr="Cannot resolve symbol 'android:Theme.Holo.Light1'">android:Theme.Holo.Light1</error>">
+  </style>
+  <style name="Style7" parent="<error descr="Cannot resolve symbol 'android:Theme.Holo1.Light'">android:Theme.Holo1.Light</error>">
+  </style>
+  <style name="Style8" parent="@android:style/Theme.Holo.Light">
+  </style>
+  <style name="Style9" parent="<error descr="Cannot resolve symbol '@android:style/Theme.Holo.Light1'">@android:style/Theme.Holo.Light1</error>">
+  </style>
+  <style name="Style10" parent="<error descr="Cannot resolve symbol '@android:style/Theme.Holo1.Light'">@android:style/Theme.Holo1.Light</error>">
+  </style>
+
+  <style name="Style.Style11" parent="@android:style/Theme.Holo.Light">
+  </style>
+
+  <style name="<error descr="Cannot resolve symbol 'Style'">Style</error>.Style12">
+  </style>
+
+  <style name="Style13" parent="@style/Style.Style11">
+  </style>
+
+  <style name="Style14" parent="@style/<error descr="Cannot resolve symbol 'Style'">Style</error>.Style12">
+  </style>
+</resources>
